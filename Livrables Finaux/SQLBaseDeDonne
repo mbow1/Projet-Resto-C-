@@ -1,0 +1,103 @@
+CREATE DATABASE restaurant;
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: Table
+#------------------------------------------------------------
+
+CREATE TABLE TableRonde(
+        ID_Table      Int  Auto_increment  NOT NULL ,
+        Numero_Table  Int NOT NULL ,
+        Nbr_Place     Int NOT NULL ,
+        Disponibilite Bool NOT NULL
+	,CONSTRAINT Table_PK PRIMARY KEY (ID_Table)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Materiel
+#------------------------------------------------------------
+
+CREATE TABLE Materiel(
+        ID_Materiel   Int  Auto_increment  NOT NULL ,
+        Type_Materiel Varchar (200) NOT NULL ,
+        Propre        Bool NOT NULL
+	,CONSTRAINT Materiel_PK PRIMARY KEY (ID_Materiel)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Stockage
+#------------------------------------------------------------
+
+CREATE TABLE Stockage(
+        ID_Stockage       Int  Auto_increment  NOT NULL ,
+        Type_Stockage     Varchar (200) NOT NULL ,
+        Capacite_Stockage Int NOT NULL
+	,CONSTRAINT Stockage_PK PRIMARY KEY (ID_Stockage)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Aliment
+#------------------------------------------------------------
+
+CREATE TABLE Aliment(
+        ID_Aliment        Int  Auto_increment  NOT NULL ,
+        Nom_Aliment       Varchar (200) NOT NULL ,
+        Type_Aliment      Varchar (200) NOT NULL ,
+        Date_Consommation Int NOT NULL ,
+        Etat_Aliment      Bool NOT NULL ,
+        Quantite_Aliment  Int NOT NULL ,
+        ID_Stockage       Int
+	,CONSTRAINT Aliment_PK PRIMARY KEY (ID_Aliment)
+
+	,CONSTRAINT Aliment_Stockage_FK FOREIGN KEY (ID_Stockage) REFERENCES Stockage(ID_Stockage)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Menu
+#------------------------------------------------------------
+
+CREATE TABLE Menu(
+        ID_Menu          Int  Auto_increment  NOT NULL ,
+        Nom_Menu         Varchar (190) NOT NULL ,
+        Type_Recette     Varchar (190) NOT NULL ,
+        Description_Menu Varchar (300) NOT NULL ,
+        Prix_Menu        Int NOT NULL
+	,CONSTRAINT Menu_PK PRIMARY KEY (ID_Menu)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Stocke
+#------------------------------------------------------------
+
+CREATE TABLE Stocke(
+        ID_Materiel       Int NOT NULL ,
+        ID_Stockage       Int NOT NULL ,
+        Quantite_Materiel Int NOT NULL
+	,CONSTRAINT Stocke_PK PRIMARY KEY (ID_Materiel,ID_Stockage)
+
+	,CONSTRAINT Stocke_Materiel_FK FOREIGN KEY (ID_Materiel) REFERENCES Materiel(ID_Materiel)
+	,CONSTRAINT Stocke_Stockage0_FK FOREIGN KEY (ID_Stockage) REFERENCES Stockage(ID_Stockage)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Comprend
+#------------------------------------------------------------
+
+CREATE TABLE Comprend(
+        ID_Menu     Int NOT NULL ,
+        ID_Aliment  Int NOT NULL ,
+        Nbr_Aliment Int NOT NULL
+	,CONSTRAINT Comprend_PK PRIMARY KEY (ID_Menu,ID_Aliment)
+
+	,CONSTRAINT Comprend_Menu_FK FOREIGN KEY (ID_Menu) REFERENCES Menu(ID_Menu)
+	,CONSTRAINT Comprend_Aliment0_FK FOREIGN KEY (ID_Aliment) REFERENCES Aliment(ID_Aliment)
+)ENGINE=InnoDB;
