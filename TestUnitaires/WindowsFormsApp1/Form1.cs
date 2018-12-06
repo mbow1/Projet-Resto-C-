@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FormsApp
+namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
@@ -19,7 +19,12 @@ namespace FormsApp
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            pictureBox1.Top = -5;
+            pictureBox1.Top -= 1;
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            pictureBox1.Top += 1;
         }
     }
 }
