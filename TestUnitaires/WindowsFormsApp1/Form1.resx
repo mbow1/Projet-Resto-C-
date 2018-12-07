@@ -142,4 +142,10 @@
         GEse5Qx5l5Eqd9XFAjsLwRw5p+B/mKym7jiVOXKOY3P0F3m8X1zREmaCAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="start.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
 </root>

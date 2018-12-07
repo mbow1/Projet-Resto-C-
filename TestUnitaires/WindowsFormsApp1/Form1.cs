@@ -19,12 +19,27 @@ namespace WindowsFormsApp1
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            pictureBox1.Top -= 1;
+           
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            pictureBox1.Top += 1;
+            
         }
+
+        private void start_Tick(object sender, EventArgs e)
+        {
+            pictureBox1.Top = -2;
+        }
+
+
+
+        ///////////////////////////////////////////
+
+
+
+
+
+        ////////////////////////////////////
     }
 }
