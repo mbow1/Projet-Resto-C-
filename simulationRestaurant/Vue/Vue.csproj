@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,99 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\Black.PNG" />
+    <Content Include="Pictures\Chaise.PNG" />
+    <Content Include="Pictures\Comptoir H.PNG" />
+    <Content Include="Pictures\comptoir P.png" />
+    <Content Include="Pictures\comptoir V.PNG" />
+    <Content Include="Pictures\comptoirh.PNG" />
+    <Content Include="Pictures\Fauteuil.PNG" />
+    <Content Include="Pictures\Frigo.PNG" />
+    <Content Include="Pictures\Mur.PNG" />
+    <Content Include="Pictures\MurHoriz.PNG" />
+    <Content Include="Pictures\Sol.PNG" />
+    <Content Include="Pictures\Sol2.PNG" />
+    <Content Include="Pictures\Sol3.PNG" />
+    <Content Include="Pictures\Stock2.PNG" />
+    <Content Include="Pictures\Stock3.PNG" />
+    <Content Include="Pictures\Table.png" />
+    <None Include="Resources\Sol2.PNG" />
+    <Content Include="Sprite\Chefcuisine\Chefcuisine1.PNG" />
+    <Content Include="Sprite\Chefcuisine\Chefcuisine2.PNG" />
+    <Content Include="Sprite\Chefderang\DownChefderang.PNG" />
+    <Content Include="Sprite\Chefderang\DownChefderangrun1.PNG" />
+    <Content Include="Sprite\Chefderang\DownChefderangrun2.PNG" />
+    <Content Include="Sprite\Chefderang\LeftChefderang.PNG" />
+    <Content Include="Sprite\Chefderang\LeftChefderangrun1.PNG" />
+    <Content Include="Sprite\Chefderang\LeftChefderangrun2.PNG" />
+    <Content Include="Sprite\Chefderang\RightChefderang.PNG" />
+    <Content Include="Sprite\Chefderang\RightChefderangrun1.PNG" />
+    <Content Include="Sprite\Chefderang\RightChefderangrun2.PNG" />
+    <Content Include="Sprite\Chefderang\UpChefderang.PNG" />
+    <Content Include="Sprite\Chefderang\UpChefderangrun1.PNG" />
+    <Content Include="Sprite\Chefderang\UpChefderangrun2.PNG" />
+    <Content Include="Sprite\Chefpartie\Chefpartie1.PNG" />
+    <Content Include="Sprite\Chefpartie\Chefpartie2.PNG" />
+    <Content Include="Sprite\Client\DownClient.PNG" />
+    <Content Include="Sprite\Client\DownClientrun1.PNG" />
+    <Content Include="Sprite\Client\DownClientrun2.PNG" />
+    <Content Include="Sprite\Client\LeftClient.PNG" />
+    <Content Include="Sprite\Client\LeftClientrun1.PNG" />
+    <Content Include="Sprite\Client\LeftClientrun2.PNG" />
+    <Content Include="Sprite\Client\RightClient.PNG" />
+    <Content Include="Sprite\Client\RightClientrun1.PNG" />
+    <Content Include="Sprite\Client\RightClientrun2.PNG" />
+    <Content Include="Sprite\Client\UP1.PNG" />
+    <Content Include="Sprite\Client\UPClientrun1.PNG" />
+    <Content Include="Sprite\Client\UpClientrun2.PNG" />
+    <Content Include="Sprite\Commiscuisine\DownCommiscuisine.PNG" />
+    <Content Include="Sprite\Commiscuisine\DownCommiscuisinerun1.PNG" />
+    <Content Include="Sprite\Commiscuisine\DownCommiscuisinerun2.PNG" />
+    <Content Include="Sprite\Commiscuisine\LeftCommiscuisine.PNG" />
+    <Content Include="Sprite\Commiscuisine\LeftCommiscuisinerun1.PNG" />
+    <Content Include="Sprite\Commiscuisine\LeftCommiscuisinerun2.PNG" />
+    <Content Include="Sprite\Commiscuisine\RightCommiscuisine.PNG" />
+    <Content Include="Sprite\Commiscuisine\RightCommiscuisinerun1.PNG" />
+    <Content Include="Sprite\Commiscuisine\RightCommiscuisinerun2.PNG" />
+    <Content Include="Sprite\Commiscuisine\UpCommiscuisine.PNG" />
+    <Content Include="Sprite\Commiscuisine\UpCommiscuisinerun1.PNG" />
+    <Content Include="Sprite\Commiscuisine\UpCommiscuisinerun2.PNG" />
+    <Content Include="Sprite\Commis\DownCommis.PNG" />
+    <Content Include="Sprite\Commis\DownCommisrun1.PNG" />
+    <Content Include="Sprite\Commis\DownCommisrun2.PNG" />
+    <Content Include="Sprite\Commis\LeftCommis.PNG" />
+    <Content Include="Sprite\Commis\LeftCommisrun1.PNG" />
+    <Content Include="Sprite\Commis\LeftCommisrun2.PNG" />
+    <Content Include="Sprite\Commis\RightCommis.PNG" />
+    <Content Include="Sprite\Commis\RightCommisrun1.PNG" />
+    <Content Include="Sprite\Commis\RightCommisrun2.PNG" />
+    <Content Include="Sprite\Commis\UpCommis.PNG" />
+    <Content Include="Sprite\Commis\UpCommisrun1.PNG" />
+    <Content Include="Sprite\Commis\UpCommisrun2.PNG" />
+    <Content Include="Sprite\Maitre Hotel\MaitreHotel.PNG" />
+    <Content Include="Sprite\Plongeurs\DownPlongeurs.PNG" />
+    <Content Include="Sprite\Plongeurs\DownPlongeursrun1.PNG" />
+    <Content Include="Sprite\Plongeurs\DownPlongeursrun2.PNG" />
+    <Content Include="Sprite\Plongeurs\LeftPlongeurs.PNG" />
+    <Content Include="Sprite\Plongeurs\LeftPlongeursrun1.PNG" />
+    <Content Include="Sprite\Plongeurs\LeftPlongeursrun2.PNG" />
+    <Content Include="Sprite\Plongeurs\RightPlongeurs.PNG" />
+    <Content Include="Sprite\Plongeurs\RightPlongeursrun1.PNG" />
+    <Content Include="Sprite\Plongeurs\RightPlongeursrun2.PNG" />
+    <Content Include="Sprite\Plongeurs\UpPlongeurs.PNG" />
+    <Content Include="Sprite\Plongeurs\UpPlongeursrun1.PNG" />
+    <Content Include="Sprite\Plongeurs\UpPlongeursrun2.PNG" />
+    <Content Include="Sprite\Serveurs\BowServeurs.PNG" />
+    <Content Include="Sprite\Serveurs\BowServeurs2.PNG" />
+    <Content Include="Sprite\Serveurs\DownServeurs.PNG" />
+    <Content Include="Sprite\Serveurs\DownServeursrun.PNG" />
+    <Content Include="Sprite\Serveurs\LeftServeurs.PNG" />
+    <Content Include="Sprite\Serveurs\LeftServeursrun.PNG" />
+    <Content Include="Sprite\Serveurs\RightServeurs.PNG" />
+    <Content Include="Sprite\Serveurs\RightServeursrun.PNG" />
+    <Content Include="Sprite\Serveurs\UpServeurs.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
