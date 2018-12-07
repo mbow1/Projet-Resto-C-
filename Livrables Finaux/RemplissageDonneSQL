@@ -62,7 +62,61 @@ Insert into materiel(Type_Materiel,Propre)values
 ("Entonnoirs",True),
 ("Couteaux de cuisine",True);
 
+<<<<<<< HEAD
 insert into aliment(Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quantite_Aliment,ID_Stockage)values
+=======
+INSERT INTO stocke(`ID_Materiel`, `ID_Stockage`, `Quantite_Materiel`) VALUES 
+(1,4,480),
+(2,4,150),
+(3,4,150),
+(4,4,150),
+(5,4,150),
+(6,4,150),
+(7,4,150),
+(8,4,150),
+(9,4,40),
+(10,4,10),
+(11,4,5),
+(12,4,10),
+(13,4,1),
+(14, '4', '10),
+(15, '4', '5),
+(16, '4', '2),
+(17, '4', '1),
+(18, '4', '1),
+(19, '4', '1),
+(20, '4', '5);
+
+
+INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quantite_Aliment,ID_Stockage) VALUES 
+("crevette","Congele",30,TRUE, 10,1)
+("riz","Denree",365,TRUE,10,3),
+("citron","Frais",3,TRUE,15,2),
+("steak","Frais",3,TRUE,10,2),
+("oeuf","Frais",3,TRUE,80,2),
+("melon","Frais",3,TRUE,10,2),
+("figue","Frais",3,TRUE,10,2),
+("poivrons","Congele",30,TRUE,8,1),
+("poulet","Congele",30,TRUE,15,1),
+("sorbet fraise","Congele",30,TRUE,2,1),
+("sorbet citron","Congele",30,TRUE,2,1),
+("chocolat","Denree",365,TRUE,15,3),
+("pommes de terre","Denree",365,TRUE,20,3),
+("salade","Frais",3,TRUE,45,2),
+("croutons","Denree",365,TRUE,10,3),
+("macarons","Frais",3,TRUE,20,2),
+("mascarpone","Frais",3,TRUE,10,2),
+("biscuits","Denree",365,TRUE,10,3),
+("cafe","Denree",365,TRUE,20,3),
+("framboise","Frais",3,TRUE,15,2),
+("sucre","Denree",365,TRUE,10,3),
+("pates sablee","Frais",3,TRUE,30,2),
+("creme anglaise","Frais",3,TRUE,20,2),
+("fromage","Frais",3,TRUE,20,2),
+("macaronis","Frais",3,TRUE,20,2),
+("lait","Denree",365,TRUE,50,3),
+("saumon","Congele",30,TRUE,15,1),
+>>>>>>> dde4b085a7c43259197f964f1e411ad7622ef489
 ("Tomate","Frais",3,TRUE,150,2),
 ("Spaghetti","Denrée",365,TRUE,15,3),
 ("Haricot","Congele",30,TRUE,20,1),
@@ -78,3 +132,40 @@ insert into aliment(Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quan
 ("Viande hache,"Congele",30,TRUE,20,1),
 ("Ail","Denrée",365,TRUE,70,3),
 ("Epinard","Congele",30,TRUE,20,1);
+<<<<<<< HEAD
+=======
+
+
+
+INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES 
+("Salade","Entree","salade, croutons",8),
+("Melon", "Entree", "melon", figue',8),
+("Jambon","Entree","jambon",8),
+("Pate","Entree","pate, cornichon",8),
+("Oeufs dur","Entree","oeuf",8),
+("Taboule","Entree","tomate, semoule",8),
+("Gaspacho',"Entree","tomate",8),
+("Saumon fume","Entree","saumon, salade",8),
+("Galette de crabe","Entree","crabe, lait, farine",8),
+("Quiche epinards","Entree","epinard",8),
+("Couscous","Plat","semoule, oignon, poulet, ail",13),
+("Colombo","Plat","boeuf, pommes de terre, oignon, ail",13),
+("Crevettes","Plat","crevette, riz, citron",13),
+("Steak Frites","Plat","steak, pommes de terre",13),
+("Alokot","Plat","bananes",13),
+("Poulet basquaise","Plat","poivrons, poulet",13),
+("Poele legumes","Plat","haricots, poulet",13),
+("Spaghetti","Plat","spaghetti, tomate",13),
+("Lasagnes","Plat","pate plate, viande hachee, tomate",13),
+("Mac and Cheese","Plat",macaronis, fromage,13),
+("Tiramisu","Dessert","mascarpone, sucre, biscuits",10),
+("Sorbet","Dessert", "sorbet citron, sorbet fraise", '10),
+("Macaron cafe","Dessert","macaron, cafe",10),
+("Mousse framboise","Dessert","oeuf, framboise",10),
+("Banane split", "Dessert", "banane, sorbet fraise",10),
+("Tarte chocolat","Dessert","pate brisee, chocolat, lait",10),
+("Tarte citron", "Dessert", "pate brisee, citron",10),
+("Tarte pommes", "Dessert", "pate brisee, pomme",10),
+("Salade fruit", "Dessert", "fraise, banane, framboise",10),
+("Ile flottante","Dessert","creme anglaise, oeuf",10);
+>>>>>>> dde4b085a7c43259197f964f1e411ad7622ef489
