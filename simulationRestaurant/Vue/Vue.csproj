@@ -114,6 +114,7 @@
     <Content Include="Sprite\Chefderang\UpChefderangrun2.PNG" />
     <Content Include="Sprite\Chefpartie\Chefpartie1.PNG" />
     <Content Include="Sprite\Chefpartie\Chefpartie2.PNG" />
+    <Content Include="Sprite\Client.gif" />
     <Content Include="Sprite\Client\DownClient.PNG" />
     <Content Include="Sprite\Client\DownClientrun1.PNG" />
     <Content Include="Sprite\Client\DownClientrun2.PNG" />

@@ -18,7 +18,7 @@ namespace Model
             get { return m_x; }
             set { m_x = value; }
         }
-        
+
         private int m_y;
         public int y
         {
@@ -32,38 +32,29 @@ namespace Model
             this.m_y = y;
         }
         /*implementation of Position class.*/
-        public void move()
-        {
-            /*current point of the character*/
-            Point pos = new Point(x, y);
-            /*destination point of the character*/
-            Point nextPos = new Point();
-            /*move method.*/
-            while (x != nextPos.X)
-            {
-                if (x < nextPos.X)
-                {
-                    x++;
-                }
-                else if (x > nextPos.X)
-                {
-                    x--;
-                }
-            }
-            /*the character moves on the x axe*/
-            while (y != nextPos.Y)
-            {
-                if (y < nextPos.Y)
-                {
-                    y++;
-                }
-                else if (y > nextPos.Y)
-                {
-                    y--;
-                }
-            }
-            /*the character moves on the y axe*/
-        }
 
+            /*
+        public void move(PictureBox personnage1 = new PictureBox(), var pictureBox547 = new PictureBox)
+        {
+            if (personnage1.Location.X < pictureBox547.Location.X)
+            {
+                personnage1.Left += 2;
+
+            }
+            else if (personnage1.Location.X > pictureBox547.Location.X)
+            {
+                personnage1.Left -= 2;
+            }
+            if (personnage1.Location.Y < pictureBox547.Location.Y)
+            {
+                personnage1.Top += 2;
+
+            }
+            else if (personnage1.Location.Y > pictureBox547.Location.Y)
+            {
+                personnage1.Top -= 2;
+            }
+        }
+        */
     }
 }

@@ -29,7 +29,13 @@ namespace WindowsFormsApp1
 
         private void start_Tick(object sender, EventArgs e)
         {
-            pictureBox1.Top = -2;
+            pictureBox1.Top = 2;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            start.Start();
+
         }
 
 

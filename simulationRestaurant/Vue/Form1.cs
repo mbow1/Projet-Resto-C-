@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace Vue
 {
+    /*
+    public class move
+    {
+
+        public void Move(PictureBox personnage1, PictureBox pictureBox547, int speed)
+        {
+            if (personnage1.Location.X < pictureBox547.Location.X)
+            {
+                personnage1.Left += speed;
+
+            }
+            else if (personnage1.Location.X > pictureBox547.Location.X)
+            {
+                personnage1.Left -= speed;
+            }
+            if (personnage1.Location.Y < pictureBox547.Location.Y)
+            {
+                personnage1.Top += speed;
+
+            }
+            else if (personnage1.Location.Y > pictureBox547.Location.Y)
+            {
+                personnage1.Top -= speed;
+            }
+
+        }
+    }*/
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+            timer1.Start();
+
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -204,6 +234,41 @@ namespace Vue
 
         private void pictureBox516_Click(object sender, EventArgs e)
         {
+
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            //timerframe++;
+            //personnage1.Top -= 2;
+
+            //personnage1.Location.X
+            //personnage1.Location.Y
+            //pictureBox547.Location.X
+            //pictureBox547.Location.Y
+            
+                if (personnage1.Location.X < pictureBox547.Location.X)
+                {
+                    personnage1.Left +=2;
+
+                }
+                else if (personnage1.Location.X > pictureBox547.Location.X)
+                {
+                    personnage1.Left -= 2;
+                }
+                if (personnage1.Location.Y < pictureBox547.Location.Y)
+                {
+                    personnage1.Top += 2;
+
+                }
+                else if (personnage1.Location.Y > pictureBox547.Location.Y)
+                {
+                    personnage1.Top -=2;
+                }
+          
 
         }
     }
