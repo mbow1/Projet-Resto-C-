@@ -127,7 +127,8 @@ INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Qua
 ("Pate plate","Denrée",365,TRUE,20,3),
 ("Viande hache","Congele",30,TRUE,20,1),
 ("Ail","Denrée",365,TRUE,70,3),
-("Epinard","Congele",30,TRUE,20,1);
+("Epinard","Congele",30,TRUE,20,1),
+("Cornichon","Frais",3,TRUE,20,2);
 
 
 INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES 
