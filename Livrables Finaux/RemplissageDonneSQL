@@ -86,7 +86,7 @@ INSERT INTO stocke(ID_Materiel,ID_Stockage,Quantite_Materiel) VALUES
 
 
 INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quantite_Aliment,ID_Stockage) VALUES 
-("crevette","Congele",30,TRUE, 10,1)
+("crevette","Congele",30,TRUE, 10,1),
 ("riz","Denree",365,TRUE,10,3),
 ("citron","Frais",3,TRUE,15,2),
 ("steak","Frais",3,TRUE,10,2),
@@ -113,7 +113,6 @@ INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Qua
 ("macaronis","Frais",3,TRUE,20,2),
 ("lait","Denree",365,TRUE,50,3),
 ("saumon","Congele",30,TRUE,15,1),
->>>>>>> dde4b085a7c43259197f964f1e411ad7622ef489
 ("Tomate","Frais",3,TRUE,150,2),
 ("Spaghetti","Denrée",365,TRUE,15,3),
 ("Haricot","Congele",30,TRUE,20,1),
@@ -126,19 +125,19 @@ INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Qua
 ("Oignon","Denrée",365,TRUE,70,3),
 ("Pomme","Frais",3,TRUE,35,2),
 ("Pate plate","Denrée",365,TRUE,20,3),
-("Viande hache,"Congele",30,TRUE,20,1),
+("Viande hache","Congele",30,TRUE,20,1),
 ("Ail","Denrée",365,TRUE,70,3),
 ("Epinard","Congele",30,TRUE,20,1);
 
 
 INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES 
 ("Salade","Entree","salade, croutons",8),
-("Melon", "Entree", "melon", figue',8),
+("Melon", "Entree", "melon, figue",8),
 ("Jambon","Entree","jambon",8),
 ("Pate","Entree","pate, cornichon",8),
 ("Oeufs dur","Entree","oeuf",8),
 ("Taboule","Entree","tomate, semoule",8),
-("Gaspacho',"Entree","tomate",8),
+("Gaspacho","Entree","tomate",8),
 ("Saumon fume","Entree","saumon, salade",8),
 ("Galette de crabe","Entree","crabe, lait, farine",8),
 ("Quiche epinards","Entree","epinard",8),
@@ -151,15 +150,14 @@ INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES
 ("Poele legumes","Plat","haricots, poulet",13),
 ("Spaghetti","Plat","spaghetti, tomate",13),
 ("Lasagnes","Plat","pate plate, viande hachee, tomate",13),
-("Mac and Cheese","Plat",macaronis, fromage,13),
+("Mac et Cheese","Plat","macaronis,fromage",13),
 ("Tiramisu","Dessert","mascarpone, sucre, biscuits",10),
-("Sorbet","Dessert", "sorbet citron, sorbet fraise", '10),
-("Macaron cafe","Dessert","macaron, cafe",10),
-("Mousse framboise","Dessert","oeuf, framboise",10),
-("Banane split", "Dessert", "banane, sorbet fraise",10),
-("Tarte chocolat","Dessert","pate brisee, chocolat, lait",10),
-("Tarte citron", "Dessert", "pate brisee, citron",10),
-("Tarte pommes", "Dessert", "pate brisee, pomme",10),
-("Salade fruit", "Dessert", "fraise, banane, framboise",10),
-("Ile flottante","Dessert","creme anglaise, oeuf",10);
-
+("Sorbet","Dessert", "sorbet citron,sorbet fraise",10),
+("Macaron cafe","Dessert","macaron,cafe",10),
+("Mousse framboise","Dessert","oeuf,framboise",10),
+("Banane split", "Dessert", "banane sorbet,fraise",10),
+("Tarte chocolat","Dessert","pate brisee,chocolat, lait",10),
+("Tarte citron", "Dessert", "pate brisee,citron",10),
+("Tarte pommes", "Dessert", "pate brisee,pomme",10),
+("Salade fruit", "Dessert", "fraise,banane,framboise",10),
+("Ile flottante","Dessert","creme anglaise,oeuf",10);
