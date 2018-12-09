@@ -62,10 +62,7 @@ Insert into materiel(Type_Materiel,Propre)values
 ("Entonnoirs",True),
 ("Couteaux de cuisine",True);
 
-<<<<<<< HEAD
-insert into aliment(Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quantite_Aliment,ID_Stockage)values
-=======
-INSERT INTO stocke(`ID_Materiel`, `ID_Stockage`, `Quantite_Materiel`) VALUES 
+INSERT INTO stocke(ID_Materiel,ID_Stockage,Quantite_Materiel) VALUES 
 (1,4,480),
 (2,4,150),
 (3,4,150),
@@ -79,13 +76,13 @@ INSERT INTO stocke(`ID_Materiel`, `ID_Stockage`, `Quantite_Materiel`) VALUES
 (11,4,5),
 (12,4,10),
 (13,4,1),
-(14, '4', '10),
-(15, '4', '5),
-(16, '4', '2),
-(17, '4', '1),
-(18, '4', '1),
-(19, '4', '1),
-(20, '4', '5);
+(14,4,10),
+(15,4,5),
+(16,4,2),
+(17,4,1),
+(18,4,1),
+(19,4,1),
+(20,4,5);
 
 
 INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Quantite_Aliment,ID_Stockage) VALUES 
@@ -132,9 +129,6 @@ INSERT INTO aliment (Nom_Aliment,Type_Aliment,Date_Consommation,Etat_Aliment,Qua
 ("Viande hache,"Congele",30,TRUE,20,1),
 ("Ail","Denrée",365,TRUE,70,3),
 ("Epinard","Congele",30,TRUE,20,1);
-<<<<<<< HEAD
-=======
-
 
 
 INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES 
@@ -168,4 +162,4 @@ INSERT INTO menu (Nom_Menu,Type_Recette,Description_Menu,Prix_Menu) VALUES
 ("Tarte pommes", "Dessert", "pate brisee, pomme",10),
 ("Salade fruit", "Dessert", "fraise, banane, framboise",10),
 ("Ile flottante","Dessert","creme anglaise, oeuf",10);
->>>>>>> dde4b085a7c43259197f964f1e411ad7622ef489
+
