@@ -42,9 +42,12 @@ namespace Vue
         public Form1()
         {
             InitializeComponent();
-            timer1.Start();
+            Deplacement.Start();
+            perso.Start();
+            perso.Interval = 5000;
+            personnage11.ImageLocation = @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\front.gif";
 
-
+            Chefdecuisineback.Location = Chefdecuisinefront.Location;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -238,38 +241,72 @@ namespace Vue
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+        public void setDirectionAnimation(PictureBox thePicture,string filename)
+        {
+            thePicture.Image = Image.FromFile(filename);
+            thePicture.BackColor = Color.Transparent;
+            //thePicture.Image = Properties.Resources.hamster;
+            //thePicture.Refresh();
+           
+        }
+
+
+
+        public void deplacer(PictureBox personnage,PictureBox arrive, int speed)
+        {
+            if (personnage.Location.X < arrive.Location.X)
+            {
+                personnage.Left += speed;
+                
+                    //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
+
+            }
+            else if (personnage.Location.X > arrive.Location.X)
+            {
+                personnage.Left -= speed;
+                
+            }
+            if (personnage.Location.Y < arrive.Location.Y)
+            {
+                personnage.Top += speed;
+                
+            }
+            else if (personnage.Location.Y > arrive.Location.Y)
+            {
+                personnage.Top -= speed;
+               
+            }
+
+
+        }
         
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+            deplacer(personnage11, pictureBox547,1);
+
             
-            //timerframe++;
-            //personnage1.Top -= 2;
-
-            //personnage1.Location.X
-            //personnage1.Location.Y
-            //pictureBox547.Location.X
-            //pictureBox547.Location.Y
             
-                if (personnage1.Location.X < pictureBox547.Location.X)
-                {
-                    personnage1.Left +=2;
 
-                }
-                else if (personnage1.Location.X > pictureBox547.Location.X)
-                {
-                    personnage1.Left -= 2;
-                }
-                if (personnage1.Location.Y < pictureBox547.Location.Y)
-                {
-                    personnage1.Top += 2;
+        }
 
-                }
-                else if (personnage1.Location.Y > pictureBox547.Location.Y)
-                {
-                    personnage1.Top -=2;
-                }
-          
+        private void button_quitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void perso_Tick(object sender, EventArgs e)
+        {
+            if (!Chefdecuisinefront.Visible)
+            {
+                Chefdecuisinefront.Visible = true;
+                Chefdecuisineback.Visible = false;
+            }else
+            {
+                Chefdecuisinefront.Visible = !true;
+                Chefdecuisineback.Visible = !false;
+            }
         }
     }
 }

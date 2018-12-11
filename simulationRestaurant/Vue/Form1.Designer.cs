@@ -41,7 +41,7 @@
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.checkBox_modeSimul = new System.Windows.Forms.CheckBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Deplacement = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,7 +50,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.personnage1 = new System.Windows.Forms.PictureBox();
+            this.Chefdecuisinefront = new System.Windows.Forms.PictureBox();
+            this.personnage11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox572 = new System.Windows.Forms.PictureBox();
             this.pictureBox571 = new System.Windows.Forms.PictureBox();
             this.pictureBox570 = new System.Windows.Forms.PictureBox();
             this.pictureBox504 = new System.Windows.Forms.PictureBox();
@@ -622,6 +624,8 @@
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.Chefdecuisineback = new System.Windows.Forms.PictureBox();
+            this.perso = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -630,7 +634,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.personnage1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinefront)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnage11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox572)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox571)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox570)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox504)).BeginInit();
@@ -1202,6 +1208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineback)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Start
@@ -1230,6 +1237,7 @@
             this.button_quitter.TabIndex = 2;
             this.button_quitter.Text = "Quitter";
             this.button_quitter.UseVisualStyleBackColor = true;
+            this.button_quitter.Click += new System.EventHandler(this.button_quitter_Click);
             // 
             // dataGridView1
             // 
@@ -1298,9 +1306,9 @@
             this.checkBox_modeSimul.Text = "Mode simulation";
             this.checkBox_modeSimul.UseVisualStyleBackColor = true;
             // 
-            // timer1
+            // Deplacement
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Deplacement.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
             // 
@@ -1367,7 +1375,10 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.personnage1);
+            this.panel1.Controls.Add(this.Chefdecuisineback);
+            this.panel1.Controls.Add(this.Chefdecuisinefront);
+            this.panel1.Controls.Add(this.personnage11);
+            this.panel1.Controls.Add(this.pictureBox572);
             this.panel1.Controls.Add(this.pictureBox571);
             this.panel1.Controls.Add(this.pictureBox570);
             this.panel1.Controls.Add(this.pictureBox504);
@@ -1945,16 +1956,35 @@
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // personnage1
+            // Chefdecuisinefront
             // 
-            this.personnage1.BackColor = System.Drawing.Color.Transparent;
-            this.personnage1.Image = global::Vue.Properties.Resources.Client1;
-            this.personnage1.Location = new System.Drawing.Point(395, 61);
-            this.personnage1.Name = "personnage1";
-            this.personnage1.Size = new System.Drawing.Size(27, 30);
-            this.personnage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.personnage1.TabIndex = 832;
-            this.personnage1.TabStop = false;
+            this.Chefdecuisinefront.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisinefront.Image")));
+            this.Chefdecuisinefront.Location = new System.Drawing.Point(578, 239);
+            this.Chefdecuisinefront.Name = "Chefdecuisinefront";
+            this.Chefdecuisinefront.Size = new System.Drawing.Size(19, 27);
+            this.Chefdecuisinefront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefdecuisinefront.TabIndex = 19;
+            this.Chefdecuisinefront.TabStop = false;
+            // 
+            // personnage11
+            // 
+            this.personnage11.BackColor = System.Drawing.Color.Transparent;
+            this.personnage11.Image = ((System.Drawing.Image)(resources.GetObject("personnage11.Image")));
+            this.personnage11.Location = new System.Drawing.Point(337, 303);
+            this.personnage11.Name = "personnage11";
+            this.personnage11.Size = new System.Drawing.Size(19, 27);
+            this.personnage11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.personnage11.TabIndex = 833;
+            this.personnage11.TabStop = false;
+            // 
+            // pictureBox572
+            // 
+            this.pictureBox572.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox572.Image")));
+            this.pictureBox572.Location = new System.Drawing.Point(392, 147);
+            this.pictureBox572.Name = "pictureBox572";
+            this.pictureBox572.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox572.TabIndex = 832;
+            this.pictureBox572.TabStop = false;
             // 
             // pictureBox571
             // 
@@ -3939,7 +3969,6 @@
             // 
             // pictureBox488
             // 
-            this.pictureBox488.Image = global::Vue.Properties.Resources.Sol2;
             this.pictureBox488.Location = new System.Drawing.Point(392, 147);
             this.pictureBox488.Name = "pictureBox488";
             this.pictureBox488.Size = new System.Drawing.Size(32, 31);
@@ -7105,6 +7134,20 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
+            // Chefdecuisineback
+            // 
+            this.Chefdecuisineback.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisineback.Image")));
+            this.Chefdecuisineback.Location = new System.Drawing.Point(603, 239);
+            this.Chefdecuisineback.Name = "Chefdecuisineback";
+            this.Chefdecuisineback.Size = new System.Drawing.Size(19, 27);
+            this.Chefdecuisineback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefdecuisineback.TabIndex = 834;
+            this.Chefdecuisineback.TabStop = false;
+            // 
+            // perso
+            // 
+            this.perso.Tick += new System.EventHandler(this.perso_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7141,7 +7184,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.personnage1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinefront)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnage11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox572)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox571)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox570)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox504)).EndInit();
@@ -7713,6 +7758,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineback)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7731,7 +7777,7 @@
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.CheckBox checkBox_modeSimul;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Deplacement;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -8311,7 +8357,11 @@
         private System.Windows.Forms.PictureBox pictureBox504;
         private System.Windows.Forms.PictureBox pictureBox507;
         private System.Windows.Forms.PictureBox pictureBox569;
-        private System.Windows.Forms.PictureBox personnage1;
+        private System.Windows.Forms.PictureBox pictureBox572;
+        private System.Windows.Forms.PictureBox personnage11;
+        private System.Windows.Forms.PictureBox Chefdecuisinefront;
+        private System.Windows.Forms.PictureBox Chefdecuisineback;
+        private System.Windows.Forms.Timer perso;
     }
 }
 

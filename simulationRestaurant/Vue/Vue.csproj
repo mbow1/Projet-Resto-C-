@@ -59,14 +59,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,9 +94,12 @@
     <None Include="Resources\Sol2.PNG" />
     <Content Include="Sprite\Chefcuisine\Chefcuisine1.PNG" />
     <Content Include="Sprite\Chefcuisine\Chefcuisine2.PNG" />
+    <Content Include="Sprite\Chefderang\back.gif" />
     <Content Include="Sprite\Chefderang\DownChefderang.PNG" />
     <Content Include="Sprite\Chefderang\DownChefderangrun1.PNG" />
     <Content Include="Sprite\Chefderang\DownChefderangrun2.PNG" />
+    <Content Include="Sprite\Chefderang\front.gif" />
+    <Content Include="Sprite\Chefderang\gauche.gif" />
     <Content Include="Sprite\Chefderang\LeftChefderang.PNG" />
     <Content Include="Sprite\Chefderang\LeftChefderangrun1.PNG" />
     <Content Include="Sprite\Chefderang\LeftChefderangrun2.PNG" />
@@ -114,7 +111,6 @@
     <Content Include="Sprite\Chefderang\UpChefderangrun2.PNG" />
     <Content Include="Sprite\Chefpartie\Chefpartie1.PNG" />
     <Content Include="Sprite\Chefpartie\Chefpartie2.PNG" />
-    <Content Include="Sprite\Client.gif" />
     <Content Include="Sprite\Client\DownClient.PNG" />
     <Content Include="Sprite\Client\DownClientrun1.PNG" />
     <Content Include="Sprite\Client\DownClientrun2.PNG" />
