@@ -1,0 +1,2 @@
+/* obtains list of quantity and food for each type of stock*/
+SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = "+nom_stockage+"
