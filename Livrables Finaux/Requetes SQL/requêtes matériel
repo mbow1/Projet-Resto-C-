@@ -1,0 +1,4 @@
+/* prendre un matériel */
+UPDATE stocke INNER JOIN materiel ON materiel.ID_Materiel = stocke.ID_Materiel SET stocke.Quantite_Materiel=stocke.Quantite_Materiel-1 WHERE materiel.Type_Materiel = "+nom_Materiel+";
+/* remettre un matériel */
+UPDATE stocke INNER JOIN materiel ON materiel.ID_Materiel = stocke.ID_Materiel SET stocke.Quantite_Materiel=stocke.Quantite_Materiel+1 WHERE materiel.Type_Materiel = "+nom_Materiel+";
