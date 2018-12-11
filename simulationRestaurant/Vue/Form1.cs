@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SpriteLibrary;
 
 namespace Vue
 {
@@ -48,6 +49,9 @@ namespace Vue
             personnage11.ImageLocation = @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\front.gif";
 
             Chefdecuisineback.Location = Chefdecuisinefront.Location;
+
+            
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -251,6 +255,21 @@ namespace Vue
            
         }
 
+       public void changeSprite2(PictureBox image,PictureBox image2)
+        {
+            if (!image.Visible)
+            {
+                image.Visible = true;
+                image2.Visible = false;
+            }
+            else
+            {
+                image.Visible = !true;
+                image2.Visible = !false;
+            }
+        }
+        
+
 
 
         public void deplacer(PictureBox personnage,PictureBox arrive, int speed)
@@ -298,15 +317,9 @@ namespace Vue
 
         private void perso_Tick(object sender, EventArgs e)
         {
-            if (!Chefdecuisinefront.Visible)
-            {
-                Chefdecuisinefront.Visible = true;
-                Chefdecuisineback.Visible = false;
-            }else
-            {
-                Chefdecuisinefront.Visible = !true;
-                Chefdecuisineback.Visible = !false;
-            }
+            
+
+            changeSprite2(Chefdecuisinefront, Chefdecuisineback);
         }
     }
 }
