@@ -1,0 +1,2 @@
+/* sélectionne les aliments dans un menu (double jointure) */
+SELECT Nom_Aliment FROM aliment INNER JOIN comprend ON aliment.ID_Aliment = comprend.ID_Aliment INNER JOIN menu ON comprend.ID_Menu = menu.ID_Menu WHERE menu.Nom_Menu = "+nom_Menu+"
