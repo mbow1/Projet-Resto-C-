@@ -1,0 +1,5 @@
+/* prendre une table */
+UPDATE tableronde SET Disponibilite=0 WHERE Nbr_Place = "+nombre_Place+" LIMIT 1;
+
+/* rendre table */
+UPDATE tableronde SET Disponibilite=1 WHERE Nbr_Place = "+nombre_Place+" LIMIT 1;
