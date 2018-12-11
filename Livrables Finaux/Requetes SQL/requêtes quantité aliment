@@ -1,0 +1,4 @@
+/* prendre un aliment */
+UPDATE aliment SET Quantite_Aliment=Quantite_Aliment-1 WHERE Nom_Aliment="+Nom_Aliment+" AND Quantite_Aliment > 0;
+/* remet un aliment */
+UPDATE aliment SET Quantite_Aliment=Quantite_Aliment+1 WHERE Nom_Aliment="+Nom_Aliment+";
