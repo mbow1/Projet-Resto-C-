@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SpriteLibrary;
 
 namespace Vue
 {
@@ -49,8 +48,6 @@ namespace Vue
             personnage11.ImageLocation = @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\front.gif";
 
             Chefdecuisineback.Location = Chefdecuisinefront.Location;
-
-            
 
         }
 
@@ -320,6 +317,16 @@ namespace Vue
             
 
             changeSprite2(Chefdecuisinefront, Chefdecuisineback);
+        }
+
+        private void pictureBox574_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
