@@ -50,9 +50,33 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Chefdecuisineback = new System.Windows.Forms.PictureBox();
-            this.Chefdecuisinefront = new System.Windows.Forms.PictureBox();
-            this.personnage11 = new System.Windows.Forms.PictureBox();
+            this.Serveurs = new System.Windows.Forms.PictureBox();
+            this.Chefderangb = new System.Windows.Forms.PictureBox();
+            this.Chefderangg = new System.Windows.Forms.PictureBox();
+            this.Chefderangd = new System.Windows.Forms.PictureBox();
+            this.Plongeursg = new System.Windows.Forms.PictureBox();
+            this.Plongeursb = new System.Windows.Forms.PictureBox();
+            this.Plongeursf = new System.Windows.Forms.PictureBox();
+            this.Plongeursd = new System.Windows.Forms.PictureBox();
+            this.MaitreHotel = new System.Windows.Forms.PictureBox();
+            this.Commiscuisined = new System.Windows.Forms.PictureBox();
+            this.Commiscuisineb = new System.Windows.Forms.PictureBox();
+            this.Commiscuisineg = new System.Windows.Forms.PictureBox();
+            this.Commiscuisinef = new System.Windows.Forms.PictureBox();
+            this.Commisg = new System.Windows.Forms.PictureBox();
+            this.Commisd = new System.Windows.Forms.PictureBox();
+            this.Commisb = new System.Windows.Forms.PictureBox();
+            this.Commisf = new System.Windows.Forms.PictureBox();
+            this.Clientf = new System.Windows.Forms.PictureBox();
+            this.Clientp = new System.Windows.Forms.PictureBox();
+            this.Clientb = new System.Windows.Forms.PictureBox();
+            this.Client = new System.Windows.Forms.PictureBox();
+            this.Clientg = new System.Windows.Forms.PictureBox();
+            this.Chefpartieb = new System.Windows.Forms.PictureBox();
+            this.Chefpartief = new System.Windows.Forms.PictureBox();
+            this.Chefdecuisineb = new System.Windows.Forms.PictureBox();
+            this.Chefdecuisinef = new System.Windows.Forms.PictureBox();
+            this.Chefderangf = new System.Windows.Forms.PictureBox();
             this.pictureBox572 = new System.Windows.Forms.PictureBox();
             this.pictureBox571 = new System.Windows.Forms.PictureBox();
             this.pictureBox570 = new System.Windows.Forms.PictureBox();
@@ -626,30 +650,6 @@
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.perso = new System.Windows.Forms.Timer(this.components);
-            this.chefderang = new System.Windows.Forms.PictureBox();
-            this.chefderang2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox573 = new System.Windows.Forms.PictureBox();
-            this.pictureBox574 = new System.Windows.Forms.PictureBox();
-            this.pictureBox575 = new System.Windows.Forms.PictureBox();
-            this.pictureBox576 = new System.Windows.Forms.PictureBox();
-            this.pictureBox577 = new System.Windows.Forms.PictureBox();
-            this.pictureBox578 = new System.Windows.Forms.PictureBox();
-            this.pictureBox579 = new System.Windows.Forms.PictureBox();
-            this.pictureBox580 = new System.Windows.Forms.PictureBox();
-            this.pictureBox581 = new System.Windows.Forms.PictureBox();
-            this.Commiscuisinef = new System.Windows.Forms.PictureBox();
-            this.Commiscuisineg = new System.Windows.Forms.PictureBox();
-            this.Commiscuisineb = new System.Windows.Forms.PictureBox();
-            this.Commiscuisined = new System.Windows.Forms.PictureBox();
-            this.pictureBox586 = new System.Windows.Forms.PictureBox();
-            this.pictureBox587 = new System.Windows.Forms.PictureBox();
-            this.pictureBox588 = new System.Windows.Forms.PictureBox();
-            this.Plongeursf = new System.Windows.Forms.PictureBox();
-            this.Plongeursd = new System.Windows.Forms.PictureBox();
-            this.pictureBox591 = new System.Windows.Forms.PictureBox();
-            this.pictureBox592 = new System.Windows.Forms.PictureBox();
-            this.pictureBox593 = new System.Windows.Forms.PictureBox();
-            this.pictureBox597 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -658,9 +658,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineback)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinefront)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personnage11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Serveurs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaitreHotel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisined)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisinef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefpartieb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefpartief)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox572)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox571)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox570)).BeginInit();
@@ -1233,30 +1257,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chefderang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chefderang2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox573)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox574)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox575)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox576)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox577)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox578)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox579)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox580)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox581)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisinef)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisined)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox586)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plongeursf)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plongeursd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox591)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox592)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox593)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox597)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Start
@@ -1423,33 +1423,33 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox597);
-            this.panel1.Controls.Add(this.pictureBox593);
-            this.panel1.Controls.Add(this.pictureBox592);
-            this.panel1.Controls.Add(this.pictureBox591);
-            this.panel1.Controls.Add(this.pictureBox587);
-            this.panel1.Controls.Add(this.pictureBox588);
+            this.panel1.Controls.Add(this.Serveurs);
+            this.panel1.Controls.Add(this.Chefderangb);
+            this.panel1.Controls.Add(this.Chefderangg);
+            this.panel1.Controls.Add(this.Chefderangd);
+            this.panel1.Controls.Add(this.Plongeursg);
+            this.panel1.Controls.Add(this.Plongeursb);
             this.panel1.Controls.Add(this.Plongeursf);
             this.panel1.Controls.Add(this.Plongeursd);
-            this.panel1.Controls.Add(this.pictureBox586);
+            this.panel1.Controls.Add(this.MaitreHotel);
             this.panel1.Controls.Add(this.Commiscuisined);
             this.panel1.Controls.Add(this.Commiscuisineb);
             this.panel1.Controls.Add(this.Commiscuisineg);
             this.panel1.Controls.Add(this.Commiscuisinef);
-            this.panel1.Controls.Add(this.pictureBox581);
-            this.panel1.Controls.Add(this.pictureBox580);
-            this.panel1.Controls.Add(this.pictureBox579);
-            this.panel1.Controls.Add(this.pictureBox578);
-            this.panel1.Controls.Add(this.pictureBox577);
-            this.panel1.Controls.Add(this.pictureBox576);
-            this.panel1.Controls.Add(this.pictureBox575);
-            this.panel1.Controls.Add(this.pictureBox574);
-            this.panel1.Controls.Add(this.pictureBox573);
-            this.panel1.Controls.Add(this.chefderang2);
-            this.panel1.Controls.Add(this.chefderang);
-            this.panel1.Controls.Add(this.Chefdecuisineback);
-            this.panel1.Controls.Add(this.Chefdecuisinefront);
-            this.panel1.Controls.Add(this.personnage11);
+            this.panel1.Controls.Add(this.Commisg);
+            this.panel1.Controls.Add(this.Commisd);
+            this.panel1.Controls.Add(this.Commisb);
+            this.panel1.Controls.Add(this.Commisf);
+            this.panel1.Controls.Add(this.Clientf);
+            this.panel1.Controls.Add(this.Clientp);
+            this.panel1.Controls.Add(this.Clientb);
+            this.panel1.Controls.Add(this.Client);
+            this.panel1.Controls.Add(this.Clientg);
+            this.panel1.Controls.Add(this.Chefpartieb);
+            this.panel1.Controls.Add(this.Chefpartief);
+            this.panel1.Controls.Add(this.Chefdecuisineb);
+            this.panel1.Controls.Add(this.Chefdecuisinef);
+            this.panel1.Controls.Add(this.Chefderangf);
             this.panel1.Controls.Add(this.pictureBox572);
             this.panel1.Controls.Add(this.pictureBox571);
             this.panel1.Controls.Add(this.pictureBox570);
@@ -2028,36 +2028,294 @@
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Chefdecuisineback
+            // Serveurs
             // 
-            this.Chefdecuisineback.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisineback.Image")));
-            this.Chefdecuisineback.Location = new System.Drawing.Point(603, 239);
-            this.Chefdecuisineback.Name = "Chefdecuisineback";
-            this.Chefdecuisineback.Size = new System.Drawing.Size(19, 27);
-            this.Chefdecuisineback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Chefdecuisineback.TabIndex = 834;
-            this.Chefdecuisineback.TabStop = false;
+            this.Serveurs.BackColor = System.Drawing.Color.Transparent;
+            this.Serveurs.Image = ((System.Drawing.Image)(resources.GetObject("Serveurs.Image")));
+            this.Serveurs.Location = new System.Drawing.Point(349, 451);
+            this.Serveurs.Name = "Serveurs";
+            this.Serveurs.Size = new System.Drawing.Size(18, 28);
+            this.Serveurs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Serveurs.TabIndex = 858;
+            this.Serveurs.TabStop = false;
             // 
-            // Chefdecuisinefront
+            // Chefderangb
             // 
-            this.Chefdecuisinefront.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisinefront.Image")));
-            this.Chefdecuisinefront.Location = new System.Drawing.Point(578, 239);
-            this.Chefdecuisinefront.Name = "Chefdecuisinefront";
-            this.Chefdecuisinefront.Size = new System.Drawing.Size(19, 27);
-            this.Chefdecuisinefront.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Chefdecuisinefront.TabIndex = 19;
-            this.Chefdecuisinefront.TabStop = false;
+            this.Chefderangb.BackColor = System.Drawing.Color.Transparent;
+            this.Chefderangb.Image = ((System.Drawing.Image)(resources.GetObject("Chefderangb.Image")));
+            this.Chefderangb.Location = new System.Drawing.Point(399, 284);
+            this.Chefderangb.Name = "Chefderangb";
+            this.Chefderangb.Size = new System.Drawing.Size(19, 28);
+            this.Chefderangb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefderangb.TabIndex = 857;
+            this.Chefderangb.TabStop = false;
             // 
-            // personnage11
+            // Chefderangg
             // 
-            this.personnage11.BackColor = System.Drawing.Color.Transparent;
-            this.personnage11.Image = ((System.Drawing.Image)(resources.GetObject("personnage11.Image")));
-            this.personnage11.Location = new System.Drawing.Point(337, 303);
-            this.personnage11.Name = "personnage11";
-            this.personnage11.Size = new System.Drawing.Size(19, 27);
-            this.personnage11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.personnage11.TabIndex = 833;
-            this.personnage11.TabStop = false;
+            this.Chefderangg.BackColor = System.Drawing.Color.Transparent;
+            this.Chefderangg.Image = ((System.Drawing.Image)(resources.GetObject("Chefderangg.Image")));
+            this.Chefderangg.Location = new System.Drawing.Point(346, 335);
+            this.Chefderangg.Name = "Chefderangg";
+            this.Chefderangg.Size = new System.Drawing.Size(16, 27);
+            this.Chefderangg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefderangg.TabIndex = 856;
+            this.Chefderangg.TabStop = false;
+            // 
+            // Chefderangd
+            // 
+            this.Chefderangd.BackColor = System.Drawing.Color.Transparent;
+            this.Chefderangd.Image = ((System.Drawing.Image)(resources.GetObject("Chefderangd.Image")));
+            this.Chefderangd.Location = new System.Drawing.Point(371, 304);
+            this.Chefderangd.Name = "Chefderangd";
+            this.Chefderangd.Size = new System.Drawing.Size(16, 27);
+            this.Chefderangd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefderangd.TabIndex = 855;
+            this.Chefderangd.TabStop = false;
+            // 
+            // Plongeursg
+            // 
+            this.Plongeursg.BackColor = System.Drawing.Color.Transparent;
+            this.Plongeursg.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursg.Image")));
+            this.Plongeursg.Location = new System.Drawing.Point(512, 158);
+            this.Plongeursg.Name = "Plongeursg";
+            this.Plongeursg.Size = new System.Drawing.Size(15, 27);
+            this.Plongeursg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Plongeursg.TabIndex = 854;
+            this.Plongeursg.TabStop = false;
+            // 
+            // Plongeursb
+            // 
+            this.Plongeursb.BackColor = System.Drawing.Color.Transparent;
+            this.Plongeursb.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursb.Image")));
+            this.Plongeursb.Location = new System.Drawing.Point(480, 113);
+            this.Plongeursb.Name = "Plongeursb";
+            this.Plongeursb.Size = new System.Drawing.Size(17, 28);
+            this.Plongeursb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Plongeursb.TabIndex = 853;
+            this.Plongeursb.TabStop = false;
+            // 
+            // Plongeursf
+            // 
+            this.Plongeursf.BackColor = System.Drawing.Color.Transparent;
+            this.Plongeursf.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursf.Image")));
+            this.Plongeursf.Location = new System.Drawing.Point(549, 128);
+            this.Plongeursf.Name = "Plongeursf";
+            this.Plongeursf.Size = new System.Drawing.Size(18, 29);
+            this.Plongeursf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Plongeursf.TabIndex = 852;
+            this.Plongeursf.TabStop = false;
+            // 
+            // Plongeursd
+            // 
+            this.Plongeursd.BackColor = System.Drawing.Color.Transparent;
+            this.Plongeursd.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursd.Image")));
+            this.Plongeursd.Location = new System.Drawing.Point(511, 128);
+            this.Plongeursd.Name = "Plongeursd";
+            this.Plongeursd.Size = new System.Drawing.Size(15, 27);
+            this.Plongeursd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Plongeursd.TabIndex = 851;
+            this.Plongeursd.TabStop = false;
+            // 
+            // MaitreHotel
+            // 
+            this.MaitreHotel.Image = ((System.Drawing.Image)(resources.GetObject("MaitreHotel.Image")));
+            this.MaitreHotel.Location = new System.Drawing.Point(112, 484);
+            this.MaitreHotel.Name = "MaitreHotel";
+            this.MaitreHotel.Size = new System.Drawing.Size(18, 27);
+            this.MaitreHotel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MaitreHotel.TabIndex = 850;
+            this.MaitreHotel.TabStop = false;
+            // 
+            // Commiscuisined
+            // 
+            this.Commiscuisined.BackColor = System.Drawing.Color.Transparent;
+            this.Commiscuisined.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisined.Image")));
+            this.Commiscuisined.Location = new System.Drawing.Point(305, 186);
+            this.Commiscuisined.Name = "Commiscuisined";
+            this.Commiscuisined.Size = new System.Drawing.Size(19, 28);
+            this.Commiscuisined.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commiscuisined.TabIndex = 849;
+            this.Commiscuisined.TabStop = false;
+            // 
+            // Commiscuisineb
+            // 
+            this.Commiscuisineb.BackColor = System.Drawing.Color.Transparent;
+            this.Commiscuisineb.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisineb.Image")));
+            this.Commiscuisineb.Location = new System.Drawing.Point(273, 141);
+            this.Commiscuisineb.Name = "Commiscuisineb";
+            this.Commiscuisineb.Size = new System.Drawing.Size(21, 30);
+            this.Commiscuisineb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commiscuisineb.TabIndex = 848;
+            this.Commiscuisineb.TabStop = false;
+            // 
+            // Commiscuisineg
+            // 
+            this.Commiscuisineg.BackColor = System.Drawing.Color.Transparent;
+            this.Commiscuisineg.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisineg.Image")));
+            this.Commiscuisineg.Location = new System.Drawing.Point(342, 156);
+            this.Commiscuisineg.Name = "Commiscuisineg";
+            this.Commiscuisineg.Size = new System.Drawing.Size(19, 28);
+            this.Commiscuisineg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commiscuisineg.TabIndex = 847;
+            this.Commiscuisineg.TabStop = false;
+            // 
+            // Commiscuisinef
+            // 
+            this.Commiscuisinef.BackColor = System.Drawing.Color.Transparent;
+            this.Commiscuisinef.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisinef.Image")));
+            this.Commiscuisinef.Location = new System.Drawing.Point(304, 156);
+            this.Commiscuisinef.Name = "Commiscuisinef";
+            this.Commiscuisinef.Size = new System.Drawing.Size(21, 30);
+            this.Commiscuisinef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commiscuisinef.TabIndex = 846;
+            this.Commiscuisinef.TabStop = false;
+            // 
+            // Commisg
+            // 
+            this.Commisg.BackColor = System.Drawing.Color.Transparent;
+            this.Commisg.Image = ((System.Drawing.Image)(resources.GetObject("Commisg.Image")));
+            this.Commisg.Location = new System.Drawing.Point(521, 492);
+            this.Commisg.Name = "Commisg";
+            this.Commisg.Size = new System.Drawing.Size(17, 27);
+            this.Commisg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commisg.TabIndex = 845;
+            this.Commisg.TabStop = false;
+            // 
+            // Commisd
+            // 
+            this.Commisd.BackColor = System.Drawing.Color.Transparent;
+            this.Commisd.Image = ((System.Drawing.Image)(resources.GetObject("Commisd.Image")));
+            this.Commisd.Location = new System.Drawing.Point(495, 467);
+            this.Commisd.Name = "Commisd";
+            this.Commisd.Size = new System.Drawing.Size(17, 27);
+            this.Commisd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commisd.TabIndex = 844;
+            this.Commisd.TabStop = false;
+            // 
+            // Commisb
+            // 
+            this.Commisb.BackColor = System.Drawing.Color.Transparent;
+            this.Commisb.Image = ((System.Drawing.Image)(resources.GetObject("Commisb.Image")));
+            this.Commisb.Location = new System.Drawing.Point(546, 467);
+            this.Commisb.Name = "Commisb";
+            this.Commisb.Size = new System.Drawing.Size(19, 28);
+            this.Commisb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commisb.TabIndex = 843;
+            this.Commisb.TabStop = false;
+            // 
+            // Commisf
+            // 
+            this.Commisf.BackColor = System.Drawing.Color.Transparent;
+            this.Commisf.Image = ((System.Drawing.Image)(resources.GetObject("Commisf.Image")));
+            this.Commisf.Location = new System.Drawing.Point(520, 441);
+            this.Commisf.Name = "Commisf";
+            this.Commisf.Size = new System.Drawing.Size(19, 29);
+            this.Commisf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Commisf.TabIndex = 842;
+            this.Commisf.TabStop = false;
+            // 
+            // Clientf
+            // 
+            this.Clientf.Image = ((System.Drawing.Image)(resources.GetObject("Clientf.Image")));
+            this.Clientf.Location = new System.Drawing.Point(131, 346);
+            this.Clientf.Name = "Clientf";
+            this.Clientf.Size = new System.Drawing.Size(20, 25);
+            this.Clientf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Clientf.TabIndex = 841;
+            this.Clientf.TabStop = false;
+            // 
+            // Clientp
+            // 
+            this.Clientp.Image = ((System.Drawing.Image)(resources.GetObject("Clientp.Image")));
+            this.Clientp.Location = new System.Drawing.Point(105, 366);
+            this.Clientp.Name = "Clientp";
+            this.Clientp.Size = new System.Drawing.Size(26, 27);
+            this.Clientp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Clientp.TabIndex = 840;
+            this.Clientp.TabStop = false;
+            // 
+            // Clientb
+            // 
+            this.Clientb.BackColor = System.Drawing.Color.Transparent;
+            this.Clientb.Image = ((System.Drawing.Image)(resources.GetObject("Clientb.Image")));
+            this.Clientb.Location = new System.Drawing.Point(119, 315);
+            this.Clientb.Name = "Clientb";
+            this.Clientb.Size = new System.Drawing.Size(19, 25);
+            this.Clientb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Clientb.TabIndex = 839;
+            this.Clientb.TabStop = false;
+            // 
+            // Client
+            // 
+            this.Client.Image = ((System.Drawing.Image)(resources.GetObject("Client.Image")));
+            this.Client.Location = new System.Drawing.Point(73, 360);
+            this.Client.Name = "Client";
+            this.Client.Size = new System.Drawing.Size(21, 25);
+            this.Client.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Client.TabIndex = 838;
+            this.Client.TabStop = false;
+            // 
+            // Clientg
+            // 
+            this.Clientg.Image = ((System.Drawing.Image)(resources.GetObject("Clientg.Image")));
+            this.Clientg.Location = new System.Drawing.Point(93, 335);
+            this.Clientg.Name = "Clientg";
+            this.Clientg.Size = new System.Drawing.Size(21, 25);
+            this.Clientg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Clientg.TabIndex = 837;
+            this.Clientg.TabStop = false;
+            // 
+            // Chefpartieb
+            // 
+            this.Chefpartieb.Image = ((System.Drawing.Image)(resources.GetObject("Chefpartieb.Image")));
+            this.Chefpartieb.Location = new System.Drawing.Point(164, 56);
+            this.Chefpartieb.Name = "Chefpartieb";
+            this.Chefpartieb.Size = new System.Drawing.Size(25, 31);
+            this.Chefpartieb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefpartieb.TabIndex = 836;
+            this.Chefpartieb.TabStop = false;
+            this.Chefpartieb.Click += new System.EventHandler(this.pictureBox574_Click);
+            // 
+            // Chefpartief
+            // 
+            this.Chefpartief.Image = ((System.Drawing.Image)(resources.GetObject("Chefpartief.Image")));
+            this.Chefpartief.Location = new System.Drawing.Point(131, 55);
+            this.Chefpartief.Name = "Chefpartief";
+            this.Chefpartief.Size = new System.Drawing.Size(27, 30);
+            this.Chefpartief.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefpartief.TabIndex = 835;
+            this.Chefpartief.TabStop = false;
+            // 
+            // Chefdecuisineb
+            // 
+            this.Chefdecuisineb.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisineb.Image")));
+            this.Chefdecuisineb.Location = new System.Drawing.Point(603, 239);
+            this.Chefdecuisineb.Name = "Chefdecuisineb";
+            this.Chefdecuisineb.Size = new System.Drawing.Size(19, 27);
+            this.Chefdecuisineb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefdecuisineb.TabIndex = 834;
+            this.Chefdecuisineb.TabStop = false;
+            // 
+            // Chefdecuisinef
+            // 
+            this.Chefdecuisinef.Image = ((System.Drawing.Image)(resources.GetObject("Chefdecuisinef.Image")));
+            this.Chefdecuisinef.Location = new System.Drawing.Point(578, 239);
+            this.Chefdecuisinef.Name = "Chefdecuisinef";
+            this.Chefdecuisinef.Size = new System.Drawing.Size(19, 27);
+            this.Chefdecuisinef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefdecuisinef.TabIndex = 19;
+            this.Chefdecuisinef.TabStop = false;
+            // 
+            // Chefderangf
+            // 
+            this.Chefderangf.BackColor = System.Drawing.Color.Transparent;
+            this.Chefderangf.Image = ((System.Drawing.Image)(resources.GetObject("Chefderangf.Image")));
+            this.Chefderangf.Location = new System.Drawing.Point(337, 303);
+            this.Chefderangf.Name = "Chefderangf";
+            this.Chefderangf.Size = new System.Drawing.Size(19, 27);
+            this.Chefderangf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Chefderangf.TabIndex = 833;
+            this.Chefderangf.TabStop = false;
             // 
             // pictureBox572
             // 
@@ -7221,263 +7479,6 @@
             // 
             this.perso.Tick += new System.EventHandler(this.perso_Tick);
             // 
-            // chefderang
-            // 
-            this.chefderang.Image = ((System.Drawing.Image)(resources.GetObject("chefderang.Image")));
-            this.chefderang.Location = new System.Drawing.Point(131, 55);
-            this.chefderang.Name = "chefderang";
-            this.chefderang.Size = new System.Drawing.Size(27, 30);
-            this.chefderang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.chefderang.TabIndex = 835;
-            this.chefderang.TabStop = false;
-            // 
-            // chefderang2
-            // 
-            this.chefderang2.Image = ((System.Drawing.Image)(resources.GetObject("chefderang2.Image")));
-            this.chefderang2.Location = new System.Drawing.Point(164, 56);
-            this.chefderang2.Name = "chefderang2";
-            this.chefderang2.Size = new System.Drawing.Size(25, 31);
-            this.chefderang2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.chefderang2.TabIndex = 836;
-            this.chefderang2.TabStop = false;
-            this.chefderang2.Click += new System.EventHandler(this.pictureBox574_Click);
-            // 
-            // pictureBox573
-            // 
-            this.pictureBox573.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox573.Image")));
-            this.pictureBox573.Location = new System.Drawing.Point(93, 335);
-            this.pictureBox573.Name = "pictureBox573";
-            this.pictureBox573.Size = new System.Drawing.Size(21, 25);
-            this.pictureBox573.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox573.TabIndex = 837;
-            this.pictureBox573.TabStop = false;
-            // 
-            // pictureBox574
-            // 
-            this.pictureBox574.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox574.Image")));
-            this.pictureBox574.Location = new System.Drawing.Point(73, 360);
-            this.pictureBox574.Name = "pictureBox574";
-            this.pictureBox574.Size = new System.Drawing.Size(21, 25);
-            this.pictureBox574.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox574.TabIndex = 838;
-            this.pictureBox574.TabStop = false;
-            // 
-            // pictureBox575
-            // 
-            this.pictureBox575.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox575.Image")));
-            this.pictureBox575.Location = new System.Drawing.Point(119, 315);
-            this.pictureBox575.Name = "pictureBox575";
-            this.pictureBox575.Size = new System.Drawing.Size(19, 25);
-            this.pictureBox575.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox575.TabIndex = 839;
-            this.pictureBox575.TabStop = false;
-            // 
-            // pictureBox576
-            // 
-            this.pictureBox576.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox576.Image")));
-            this.pictureBox576.Location = new System.Drawing.Point(105, 366);
-            this.pictureBox576.Name = "pictureBox576";
-            this.pictureBox576.Size = new System.Drawing.Size(26, 27);
-            this.pictureBox576.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox576.TabIndex = 840;
-            this.pictureBox576.TabStop = false;
-            // 
-            // pictureBox577
-            // 
-            this.pictureBox577.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox577.Image")));
-            this.pictureBox577.Location = new System.Drawing.Point(131, 346);
-            this.pictureBox577.Name = "pictureBox577";
-            this.pictureBox577.Size = new System.Drawing.Size(20, 25);
-            this.pictureBox577.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox577.TabIndex = 841;
-            this.pictureBox577.TabStop = false;
-            // 
-            // pictureBox578
-            // 
-            this.pictureBox578.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox578.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox578.Image")));
-            this.pictureBox578.Location = new System.Drawing.Point(520, 441);
-            this.pictureBox578.Name = "pictureBox578";
-            this.pictureBox578.Size = new System.Drawing.Size(19, 29);
-            this.pictureBox578.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox578.TabIndex = 842;
-            this.pictureBox578.TabStop = false;
-            // 
-            // pictureBox579
-            // 
-            this.pictureBox579.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox579.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox579.Image")));
-            this.pictureBox579.Location = new System.Drawing.Point(546, 467);
-            this.pictureBox579.Name = "pictureBox579";
-            this.pictureBox579.Size = new System.Drawing.Size(19, 28);
-            this.pictureBox579.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox579.TabIndex = 843;
-            this.pictureBox579.TabStop = false;
-            // 
-            // pictureBox580
-            // 
-            this.pictureBox580.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox580.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox580.Image")));
-            this.pictureBox580.Location = new System.Drawing.Point(495, 467);
-            this.pictureBox580.Name = "pictureBox580";
-            this.pictureBox580.Size = new System.Drawing.Size(17, 27);
-            this.pictureBox580.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox580.TabIndex = 844;
-            this.pictureBox580.TabStop = false;
-            // 
-            // pictureBox581
-            // 
-            this.pictureBox581.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox581.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox581.Image")));
-            this.pictureBox581.Location = new System.Drawing.Point(521, 492);
-            this.pictureBox581.Name = "pictureBox581";
-            this.pictureBox581.Size = new System.Drawing.Size(17, 27);
-            this.pictureBox581.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox581.TabIndex = 845;
-            this.pictureBox581.TabStop = false;
-            // 
-            // Commiscuisinef
-            // 
-            this.Commiscuisinef.BackColor = System.Drawing.Color.Transparent;
-            this.Commiscuisinef.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisinef.Image")));
-            this.Commiscuisinef.Location = new System.Drawing.Point(304, 156);
-            this.Commiscuisinef.Name = "Commiscuisinef";
-            this.Commiscuisinef.Size = new System.Drawing.Size(21, 30);
-            this.Commiscuisinef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Commiscuisinef.TabIndex = 846;
-            this.Commiscuisinef.TabStop = false;
-            // 
-            // Commiscuisineg
-            // 
-            this.Commiscuisineg.BackColor = System.Drawing.Color.Transparent;
-            this.Commiscuisineg.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisineg.Image")));
-            this.Commiscuisineg.Location = new System.Drawing.Point(342, 156);
-            this.Commiscuisineg.Name = "Commiscuisineg";
-            this.Commiscuisineg.Size = new System.Drawing.Size(19, 28);
-            this.Commiscuisineg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Commiscuisineg.TabIndex = 847;
-            this.Commiscuisineg.TabStop = false;
-            // 
-            // Commiscuisineb
-            // 
-            this.Commiscuisineb.BackColor = System.Drawing.Color.Transparent;
-            this.Commiscuisineb.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisineb.Image")));
-            this.Commiscuisineb.Location = new System.Drawing.Point(273, 141);
-            this.Commiscuisineb.Name = "Commiscuisineb";
-            this.Commiscuisineb.Size = new System.Drawing.Size(21, 30);
-            this.Commiscuisineb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Commiscuisineb.TabIndex = 848;
-            this.Commiscuisineb.TabStop = false;
-            // 
-            // Commiscuisined
-            // 
-            this.Commiscuisined.BackColor = System.Drawing.Color.Transparent;
-            this.Commiscuisined.Image = ((System.Drawing.Image)(resources.GetObject("Commiscuisined.Image")));
-            this.Commiscuisined.Location = new System.Drawing.Point(305, 186);
-            this.Commiscuisined.Name = "Commiscuisined";
-            this.Commiscuisined.Size = new System.Drawing.Size(19, 28);
-            this.Commiscuisined.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Commiscuisined.TabIndex = 849;
-            this.Commiscuisined.TabStop = false;
-            // 
-            // pictureBox586
-            // 
-            this.pictureBox586.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox586.Image")));
-            this.pictureBox586.Location = new System.Drawing.Point(112, 484);
-            this.pictureBox586.Name = "pictureBox586";
-            this.pictureBox586.Size = new System.Drawing.Size(18, 27);
-            this.pictureBox586.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox586.TabIndex = 850;
-            this.pictureBox586.TabStop = false;
-            // 
-            // pictureBox587
-            // 
-            this.pictureBox587.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox587.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox587.Image")));
-            this.pictureBox587.Location = new System.Drawing.Point(512, 158);
-            this.pictureBox587.Name = "pictureBox587";
-            this.pictureBox587.Size = new System.Drawing.Size(15, 27);
-            this.pictureBox587.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox587.TabIndex = 854;
-            this.pictureBox587.TabStop = false;
-            // 
-            // pictureBox588
-            // 
-            this.pictureBox588.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox588.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox588.Image")));
-            this.pictureBox588.Location = new System.Drawing.Point(480, 113);
-            this.pictureBox588.Name = "pictureBox588";
-            this.pictureBox588.Size = new System.Drawing.Size(17, 28);
-            this.pictureBox588.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox588.TabIndex = 853;
-            this.pictureBox588.TabStop = false;
-            // 
-            // Plongeursf
-            // 
-            this.Plongeursf.BackColor = System.Drawing.Color.Transparent;
-            this.Plongeursf.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursf.Image")));
-            this.Plongeursf.Location = new System.Drawing.Point(549, 128);
-            this.Plongeursf.Name = "Plongeursf";
-            this.Plongeursf.Size = new System.Drawing.Size(18, 29);
-            this.Plongeursf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Plongeursf.TabIndex = 852;
-            this.Plongeursf.TabStop = false;
-            // 
-            // Plongeursd
-            // 
-            this.Plongeursd.BackColor = System.Drawing.Color.Transparent;
-            this.Plongeursd.Image = ((System.Drawing.Image)(resources.GetObject("Plongeursd.Image")));
-            this.Plongeursd.Location = new System.Drawing.Point(511, 128);
-            this.Plongeursd.Name = "Plongeursd";
-            this.Plongeursd.Size = new System.Drawing.Size(15, 27);
-            this.Plongeursd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.Plongeursd.TabIndex = 851;
-            this.Plongeursd.TabStop = false;
-            // 
-            // pictureBox591
-            // 
-            this.pictureBox591.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox591.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox591.Image")));
-            this.pictureBox591.Location = new System.Drawing.Point(371, 304);
-            this.pictureBox591.Name = "pictureBox591";
-            this.pictureBox591.Size = new System.Drawing.Size(16, 27);
-            this.pictureBox591.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox591.TabIndex = 855;
-            this.pictureBox591.TabStop = false;
-            // 
-            // pictureBox592
-            // 
-            this.pictureBox592.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox592.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox592.Image")));
-            this.pictureBox592.Location = new System.Drawing.Point(346, 335);
-            this.pictureBox592.Name = "pictureBox592";
-            this.pictureBox592.Size = new System.Drawing.Size(16, 27);
-            this.pictureBox592.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox592.TabIndex = 856;
-            this.pictureBox592.TabStop = false;
-            // 
-            // pictureBox593
-            // 
-            this.pictureBox593.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox593.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox593.Image")));
-            this.pictureBox593.Location = new System.Drawing.Point(399, 284);
-            this.pictureBox593.Name = "pictureBox593";
-            this.pictureBox593.Size = new System.Drawing.Size(19, 28);
-            this.pictureBox593.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox593.TabIndex = 857;
-            this.pictureBox593.TabStop = false;
-            // 
-            // pictureBox597
-            // 
-            this.pictureBox597.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox597.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox597.Image")));
-            this.pictureBox597.Location = new System.Drawing.Point(349, 451);
-            this.pictureBox597.Name = "pictureBox597";
-            this.pictureBox597.Size = new System.Drawing.Size(18, 28);
-            this.pictureBox597.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox597.TabIndex = 858;
-            this.pictureBox597.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7514,9 +7515,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineback)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinefront)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personnage11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Serveurs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Plongeursd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaitreHotel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisined)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisinef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commisf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Clientg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefpartieb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefpartief)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisineb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefdecuisinef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Chefderangf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox572)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox571)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox570)).EndInit();
@@ -8089,30 +8114,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chefderang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chefderang2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox573)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox574)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox575)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox576)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox577)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox578)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox579)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox580)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox581)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisinef)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisineb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commiscuisined)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox586)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox587)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox588)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plongeursf)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Plongeursd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox591)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox592)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox593)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox597)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8712,34 +8713,34 @@
         private System.Windows.Forms.PictureBox pictureBox507;
         private System.Windows.Forms.PictureBox pictureBox569;
         private System.Windows.Forms.PictureBox pictureBox572;
-        private System.Windows.Forms.PictureBox personnage11;
-        private System.Windows.Forms.PictureBox Chefdecuisinefront;
-        private System.Windows.Forms.PictureBox Chefdecuisineback;
+        private System.Windows.Forms.PictureBox Chefderangf;
+        private System.Windows.Forms.PictureBox Chefdecuisinef;
+        private System.Windows.Forms.PictureBox Chefdecuisineb;
         private System.Windows.Forms.Timer perso;
-        private System.Windows.Forms.PictureBox chefderang2;
-        private System.Windows.Forms.PictureBox chefderang;
-        private System.Windows.Forms.PictureBox pictureBox581;
-        private System.Windows.Forms.PictureBox pictureBox580;
-        private System.Windows.Forms.PictureBox pictureBox579;
-        private System.Windows.Forms.PictureBox pictureBox578;
-        private System.Windows.Forms.PictureBox pictureBox577;
-        private System.Windows.Forms.PictureBox pictureBox576;
-        private System.Windows.Forms.PictureBox pictureBox575;
-        private System.Windows.Forms.PictureBox pictureBox574;
-        private System.Windows.Forms.PictureBox pictureBox573;
+        private System.Windows.Forms.PictureBox Chefpartieb;
+        private System.Windows.Forms.PictureBox Chefpartief;
+        private System.Windows.Forms.PictureBox Commisg;
+        private System.Windows.Forms.PictureBox Commisd;
+        private System.Windows.Forms.PictureBox Commisb;
+        private System.Windows.Forms.PictureBox Commisf;
+        private System.Windows.Forms.PictureBox Clientf;
+        private System.Windows.Forms.PictureBox Clientp;
+        private System.Windows.Forms.PictureBox Clientb;
+        private System.Windows.Forms.PictureBox Client;
+        private System.Windows.Forms.PictureBox Clientg;
         private System.Windows.Forms.PictureBox Commiscuisined;
         private System.Windows.Forms.PictureBox Commiscuisineb;
         private System.Windows.Forms.PictureBox Commiscuisineg;
         private System.Windows.Forms.PictureBox Commiscuisinef;
-        private System.Windows.Forms.PictureBox pictureBox587;
-        private System.Windows.Forms.PictureBox pictureBox588;
+        private System.Windows.Forms.PictureBox Plongeursg;
+        private System.Windows.Forms.PictureBox Plongeursb;
         private System.Windows.Forms.PictureBox Plongeursf;
         private System.Windows.Forms.PictureBox Plongeursd;
-        private System.Windows.Forms.PictureBox pictureBox586;
-        private System.Windows.Forms.PictureBox pictureBox597;
-        private System.Windows.Forms.PictureBox pictureBox593;
-        private System.Windows.Forms.PictureBox pictureBox592;
-        private System.Windows.Forms.PictureBox pictureBox591;
+        private System.Windows.Forms.PictureBox MaitreHotel;
+        private System.Windows.Forms.PictureBox Serveurs;
+        private System.Windows.Forms.PictureBox Chefderangb;
+        private System.Windows.Forms.PictureBox Chefderangg;
+        private System.Windows.Forms.PictureBox Chefderangd;
     }
 }
 
