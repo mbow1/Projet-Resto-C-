@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Model
 {
     public class Commande
@@ -11,17 +12,36 @@ namespace Model
         public void commander()
         {
             choix_aleatoire();
-            string menuChoisi = choix_aleatoire();
-            System.Console.WriteLine(menuChoisi);
-            Console.ReadKey();
+            string menuChoisi = choix_aleatoire(); // menuChoisi take the menu ramdomly chosen by the choix_aleatoire method
 
+            MySqlConnection Connect = new MySqlConnection("datasource=Localhost;port=3306;username=root;password=dylan;database=restaurant");
+            Connect.Open();
+            Command.CommandText = "SELECT Description_Menu FROM menu WHERE Nom_Menu = " + menuChoisi + "";
+            string listeIngredient = "test";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while (Reader.Read())
+                {
+                    Reader[0].ToString();
+                    listeIngredient = Convert.ToString(Reader[0]); //convert result of query to a string
+                }
+                Connect.Close();
+            }
+
+            string[] ingredient = listeIngredient.Split(','); //we separate list of ingredients between , and stock them in string. 
+
+            for (int i=0; i<=ingredient.Length; i++)
+            {
+                Command.CommandText = "UPDATE aliment SET Quantite_Aliment = Quantite_Aliment - 1 WHERE Nom_Aliment = "+ingredient[i]+" AND Quantite_Aliment > 0;";
+            }
             string choix_aleatoire()
             {
                 string nomMenu;
                 Random aleatoire = new Random();
-                int menuAleatoire = aleatoire.Next(29);
+                int menuAleatoire = aleatoire.Next(29); //generate a number between 0 and 29 because we have 30 menues
 
-                if (menuAleatoire == 0)
+                if (menuAleatoire == 0) //we associate eah number a menu
                 {
                     nomMenu = "Ile flottante";
                     return (nomMenu);
