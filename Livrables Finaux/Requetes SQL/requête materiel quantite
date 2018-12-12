@@ -1,0 +1,2 @@
+/*requête pour avoir la quantité et le nom du materiel pour afficher dans la vue */
+SELECT Type_Materiel, Quantite_Materiel FROM materiel INNER JOIN stocke ON materiel.ID_Materiel = stocke.ID_Materiel;
