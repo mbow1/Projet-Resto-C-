@@ -548,39 +548,71 @@ namespace Vue
         /// <param name="personnage"></param>
         /// <param name="arrive"></param>
         /// <param name="speed"></param>
-        public void deplacer(PictureBox personnage,PictureBox arrive, int speed)
+        
+        public void deplacer(PictureBox[] personnage,PictureBox arrive, int speed)
         {
-            if (personnage.Location.X < arrive.Location.X)
+            
+
+            if (personnage[3].Location.X < arrive.Location.X)
             {
-                personnage.Left += speed;
-                
-                    //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
+                personnage[0].Visible = !true;
+                personnage[1].Visible = !true;
+                personnage[2].Visible = !true;
+                personnage[3].Visible = true;
+                personnage[3].Left += speed;
+                personnage[0].Location = personnage[3].Location;
+                personnage[2].Location = personnage[3].Location;
+                personnage[3].Location = personnage[3].Location;
+
+                //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
 
             }
-            else if (personnage.Location.X > arrive.Location.X)
+            else if (personnage[2].Location.X > arrive.Location.X)
             {
-                personnage.Left -= speed;
-                
+                personnage[0].Visible = !true;
+                personnage[1].Visible = !true;
+                personnage[2].Visible = true;
+                personnage[3].Visible = !true;
+                personnage[2].Left -= speed;
+                personnage[0].Location = personnage[2].Location;
+                personnage[1].Location = personnage[2].Location;
+                personnage[3].Location = personnage[2].Location;
+
+
             }
-            if (personnage.Location.Y < arrive.Location.Y)
+            if (personnage[1].Location.Y < arrive.Location.Y)
             {
-                personnage.Top += speed;
-                
+                personnage[0].Visible = !true;
+                personnage[1].Visible = true;
+                personnage[2].Visible = !true;
+                personnage[3].Visible = !true;
+                personnage[1].Top += speed;
+                personnage[0].Location = personnage[1].Location;
+                personnage[2].Location = personnage[1].Location;
+                personnage[3].Location = personnage[1].Location;
+
             }
-            else if (personnage.Location.Y > arrive.Location.Y)
+            else if (personnage[0].Location.Y > arrive.Location.Y)
             {
-                personnage.Top -= speed;
-               
+                personnage[0].Visible = true;
+                personnage[1].Visible = !true;
+                personnage[2].Visible = !true;
+                personnage[3].Visible = !true;
+                personnage[0].Top -= speed;
+                personnage[1].Location = personnage[0].Location;
+                personnage[2].Location = personnage[0].Location;
+                personnage[3].Location = personnage[0].Location;
             }
 
 
         }
-        
+
+        public bool estArriveX,estArriveY; 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            deplacer(Chefderangf, pictureBox547,1);
-
+            //deplacer(Chefderangf, pictureBox547,1);
+            deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261, 1);
             
             
 
