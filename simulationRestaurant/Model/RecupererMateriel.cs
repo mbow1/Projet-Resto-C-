@@ -9,8 +9,9 @@ namespace Model
     public class RecupererMateriel
     {
 
-        public string recupererMateriel()
+        public void recupererMateriel()
         {
+
         }
     }
 }

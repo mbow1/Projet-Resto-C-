@@ -1,44 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using MySql.Data.MySqlClient;
 
 namespace Vue
 {
-    /*
-    public class move
-    {
 
-        public void Move(PictureBox personnage1, PictureBox pictureBox547, int speed)
-        {
-            if (personnage1.Location.X < pictureBox547.Location.X)
-            {
-                personnage1.Left += speed;
-
-            }
-            else if (personnage1.Location.X > pictureBox547.Location.X)
-            {
-                personnage1.Left -= speed;
-            }
-            if (personnage1.Location.Y < pictureBox547.Location.Y)
-            {
-                personnage1.Top += speed;
-
-            }
-            else if (personnage1.Location.Y > pictureBox547.Location.Y)
-            {
-                personnage1.Top -= speed;
-            }
-
-        }
-    }*/
     public partial class Form1 : Form
     {
+        MySqlConnection Connect = new MySqlConnection(@"datasource=Localhost;port=3306;username=root;database=restaurant");
+        MySqlCommand Command = new MySqlCommand();
+        MySqlDataReader Reader;
+
         public Form1()
         {
             InitializeComponent();
@@ -55,10 +29,150 @@ namespace Vue
             initpersonnage(Commiscuisinef, Commiscuisineb, Commiscuisined, Commiscuisineg);
             initpersonnage(Plongeursf, Plongeursb, Plongeursd, Plongeursg);
             initpersonnage(Commisf, Commisb, Commisd, Commisg);
-           
+
+
+            ////////////////////////////////Base de Données ////////////////////////////////
+            Command.Connection = Connect;
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadMateriel();
+            loadReserve();
+
+
+            laver.laver(Connect,Command,Reader);
 
 
         }
+
+        Laver laver = new Laver();
+        private void loadMateriel()
+        {
+            dataGridView4.Rows.Clear();
+            DataGridViewColumn columnMateriel = dataGridView4.Columns[0];
+            columnMateriel.Width = 60;
+            DataGridViewColumn columnStock = dataGridView4.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Type_Materiel, Quantite_Materiel FROM materiel INNER JOIN stocke ON materiel.ID_Materiel = stocke.ID_Materiel ";
+            Reader = Command.ExecuteReader();
+            if (Reader.HasRows)
+            {
+
+
+                while (Reader.Read())
+                {
+
+                    dataGridView4.Rows.Add(Reader[0].ToString(), Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+
+        // c'est la m�thode pour  afficher la table Stock d'aliment pour la r�serve  sur l'interface 
+        private void loadReserve()
+        {
+
+            dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView2.Columns[0]; // je selectionne la premi�re colonne correspondant � la datagridview 2 (Reserve)
+            columnAliment.Width = 60; // this sa augmente la longueur de la colonne de 60
+            DataGridViewColumn columnStock = dataGridView2.Columns[1];
+            columnStock.Width = 40; // ca augmente la longueur de la colonne de 40
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'reserve' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+
+                while (Reader.Read())
+                {
+
+                    dataGridView2.Rows.Add(Reader[0].ToString(), Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+
+        // c'est la m�thode pour afficher la table Stock d'aliment  pour le cong�lateur sur l'interface
+        private void loadCongel()
+        {
+            dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView3.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView3.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'congelateur' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)//Si il a une valeur � lire fait ce qu'il y a � l'int�rieur
+            {
+
+                while (Reader.Read())// tant qu'il a quelque chose � lire  fait sa
+                {
+
+                    dataGridView3.Rows.Add(Reader[0].ToString(), Reader[1].ToString());// chaque ligne de la premi�re et deuxi�me colonne sera stock� dans le datagrid de la Cong�lation
+
+                }
+                Connect.Close();
+            }
+        }
+
+
+
+        // c'est la m�thode pour afficher la table Stock d'aliment  pour la chambre froide sur l'interface
+        private void loadFroid()
+        {
+            dataGridView5.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView5.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView5.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'chambre froide' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while (Reader.Read())
+                {
+
+                    dataGridView5.Rows.Add(Reader[0].ToString(), Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+
+        private void loadgrid5()
+        {
+
+        }
+
+        // c'est la m�thode pour  afficher la table tableronde  sur l'interface 
+        private void loadTable()
+        {
+
+            dataGridView6.Rows.Clear();
+            DataGridViewColumn colum1 = dataGridView6.Columns[0];
+            DataGridViewColumn colum2 = dataGridView6.Columns[1];
+            DataGridViewColumn colum3 = dataGridView6.Columns[2];
+            colum1.Width = 40;
+            colum2.Width = 40;
+            colum3.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Numero_Table, Nbr_Place, Disponibilite From tableronde;";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while (Reader.Read())
+                {
+                    dataGridView6.Rows.Add(Reader[0].ToString(), Reader[1].ToString(), Reader[2].ToString());
+                }
+                Connect.Close();
+            }
+        }
+
         public Point loc = new Point();
 
         public void sprite(int w, int direction)
@@ -539,8 +653,11 @@ namespace Vue
                 image2.Visible = !false;
             }
         }
-        
 
+        public static bool IsNullOrEmpty(Array array)
+        {
+            return (array == null || array.Length == 0);
+        }
 
         /// <summary>
         /// 
@@ -548,7 +665,7 @@ namespace Vue
         /// <param name="personnage"></param>
         /// <param name="arrive"></param>
         /// <param name="speed"></param>
-        
+
         public void deplacer(PictureBox[] personnage,PictureBox arrive, int speed)
         {
             
@@ -606,6 +723,7 @@ namespace Vue
 
 
         }
+        Commande commander = new Commande();
 
         public bool estArriveX,estArriveY; 
         private void timer1_Tick(object sender, EventArgs e)
@@ -613,7 +731,7 @@ namespace Vue
 
             //deplacer(Chefderangf, pictureBox547,1);
             deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261, 1);
-            
+
             
 
         }
@@ -622,7 +740,7 @@ namespace Vue
         {
             Application.Exit();
         }
-
+        
         private void perso_Tick(object sender, EventArgs e)
         {
             
@@ -633,6 +751,15 @@ namespace Vue
         private void pictureBox574_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        private void Refresh_btn_Click(object sender, EventArgs e)
+        {
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadReserve(); //appel de la fonction loadgrid
+            loadMateriel();
         }
 
         private void pictureBox42_Click(object sender, EventArgs e)

@@ -650,6 +650,18 @@
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.perso = new System.Windows.Forms.Timer(this.components);
+            this.Refresh_btn = new System.Windows.Forms.Button();
+            this.AlimentCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Materiel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aliment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockFroid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AlimentReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nbr_Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dispo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -1299,6 +1311,9 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AlimentReserve,
+            this.StockReserve});
             this.dataGridView2.Location = new System.Drawing.Point(1062, 279);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(121, 317);
@@ -1307,6 +1322,9 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AlimentCongel,
+            this.StockCongel});
             this.dataGridView3.Location = new System.Drawing.Point(781, 187);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(113, 150);
@@ -1315,6 +1333,9 @@
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Materiel,
+            this.Quantite});
             this.dataGridView4.Location = new System.Drawing.Point(781, 365);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(113, 231);
@@ -1323,6 +1344,9 @@
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Aliment,
+            this.StockFroid});
             this.dataGridView5.Location = new System.Drawing.Point(914, 279);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(126, 317);
@@ -1331,6 +1355,10 @@
             // dataGridView6
             // 
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NumeroTable,
+            this.Nbr_Place,
+            this.Dispo});
             this.dataGridView6.Location = new System.Drawing.Point(1062, 103);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(121, 150);
@@ -7479,11 +7507,77 @@
             // 
             this.perso.Tick += new System.EventHandler(this.perso_Tick);
             // 
+            // Refresh_btn
+            // 
+            this.Refresh_btn.Location = new System.Drawing.Point(1062, 606);
+            this.Refresh_btn.Name = "Refresh_btn";
+            this.Refresh_btn.Size = new System.Drawing.Size(75, 23);
+            this.Refresh_btn.TabIndex = 19;
+            this.Refresh_btn.Text = "Refresh";
+            this.Refresh_btn.UseVisualStyleBackColor = true;
+            this.Refresh_btn.Click += new System.EventHandler(this.Refresh_btn_Click);
+            // 
+            // AlimentCongel
+            // 
+            this.AlimentCongel.HeaderText = "AlimentCongel";
+            this.AlimentCongel.Name = "AlimentCongel";
+            // 
+            // StockCongel
+            // 
+            this.StockCongel.HeaderText = "StockCongel";
+            this.StockCongel.Name = "StockCongel";
+            // 
+            // Materiel
+            // 
+            this.Materiel.HeaderText = "Materiel";
+            this.Materiel.Name = "Materiel";
+            // 
+            // Quantite
+            // 
+            this.Quantite.HeaderText = "Quantite";
+            this.Quantite.Name = "Quantite";
+            // 
+            // Aliment
+            // 
+            this.Aliment.HeaderText = "Aliment";
+            this.Aliment.Name = "Aliment";
+            // 
+            // StockFroid
+            // 
+            this.StockFroid.HeaderText = "StockFroid";
+            this.StockFroid.Name = "StockFroid";
+            // 
+            // AlimentReserve
+            // 
+            this.AlimentReserve.HeaderText = "AlimentReserve";
+            this.AlimentReserve.Name = "AlimentReserve";
+            // 
+            // StockReserve
+            // 
+            this.StockReserve.HeaderText = "StockReserve";
+            this.StockReserve.Name = "StockReserve";
+            // 
+            // NumeroTable
+            // 
+            this.NumeroTable.HeaderText = "NumeroTable";
+            this.NumeroTable.Name = "NumeroTable";
+            // 
+            // Nbr_Place
+            // 
+            this.Nbr_Place.HeaderText = "Nbr_Place";
+            this.Nbr_Place.Name = "Nbr_Place";
+            // 
+            // Dispo
+            // 
+            this.Dispo.HeaderText = "Dispo";
+            this.Dispo.Name = "Dispo";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 641);
+            this.Controls.Add(this.Refresh_btn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -8741,6 +8835,18 @@
         private System.Windows.Forms.PictureBox Chefderangb;
         private System.Windows.Forms.PictureBox Chefderangg;
         private System.Windows.Forms.PictureBox Chefderangd;
+        private System.Windows.Forms.Button Refresh_btn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AlimentReserve;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StockReserve;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AlimentCongel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StockCongel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Materiel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aliment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StockFroid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nbr_Place;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dispo;
     }
 }
 
