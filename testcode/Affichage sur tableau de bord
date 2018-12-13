@@ -26,7 +26,7 @@ namespace Vue
             loadCongel();
             loadMateriel();
             loadReserve();
-            Chloe();
+            
         
         }
         // c'est la méthode pour afficher le nom et la quantite de materiel sur l'interface
@@ -53,3 +53,28 @@ namespace Vue
                 Connect.Close();
             }
         }
+          // c'est la méthode pour  afficher la table Stock d'aliment pour la réserve  sur l'interface 
+        private void loadReserve()
+        {
+            
+            dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView2.Columns[0]; // je selectionne la première colonne correspondant à la datagridview 2 (Reserve)
+            columnAliment.Width = 60; // sa augmente la longeur de la colonne de 60
+            DataGridViewColumn columnStock = dataGridView2.Columns[1];
+            columnStock.Width = 40; // sa augmente la longeur de la colonne de 40
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'reserve' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+             
+                while(Reader.Read())
+                {
+                   
+                    dataGridView2.Rows.Add(Reader[0].ToString(),Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+        
