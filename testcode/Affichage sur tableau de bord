@@ -102,3 +102,63 @@ namespace Vue
         }
         
         
+        
+        // c'est la méthode pour afficher la table Stock d'aliment  pour la chambre froide sur l'interface
+         private void loadFroid()
+        {
+            dataGridView5.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView5.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView5.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'chambre froide' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while(Reader.Read())
+                {
+                   
+                    dataGridView5.Rows.Add(Reader[0].ToString(),Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+        
+        // c'est la méthode pour  afficher la table tableronde  sur l'interface 
+        private void loadTable()
+        {
+           
+            dataGridView6.Rows.Clear();
+            DataGridViewColumn colum1 = dataGridView6.Columns[0];
+            DataGridViewColumn colum2 = dataGridView6.Columns[1];
+            DataGridViewColumn colum3 = dataGridView6.Columns[2];
+            colum1.Width = 40;
+            colum2.Width = 40;
+            colum3.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Numero_Table, Nbr_Place, Disponibilite From tableronde;";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while(Reader.Read())
+                {
+                    dataGridView6.Rows.Add(Reader[0].ToString(),Reader[1].ToString(),Reader[2].ToString());
+                }
+                Connect.Close();
+            }
+        }
+        
+
+        private void button_Refresh_Click(object sender, EventArgs e)
+        {
+            
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadReserve(); //appel de la fonction loadgrid
+            loadMateriel();
+        }
+        
+        
