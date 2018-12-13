@@ -1,0 +1,55 @@
+ //
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace Vue
+{
+    public partial class Form1 : Form
+    { 
+        MySqlConnection Connect = new MySqlConnection ("datasource=Localhost;port=3306;username=root;password=dylan;database=restaurant");
+        MySqlCommand Command = new MySqlCommand();
+        MySqlDataReader Reader;
+        public Form1()
+        {
+            InitializeComponent();
+            Command.Connection = Connect;
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadMateriel();
+            loadReserve();
+            Chloe();
+        
+        }
+        // c'est la méthode pour afficher le nom et la quantite de materiel sur l'interface
+        private void loadMateriel()
+        {
+            dataGridView4.Rows.Clear();
+            DataGridViewColumn columnMateriel = dataGridView4.Columns[0];
+            columnMateriel.Width = 60;
+            DataGridViewColumn columnStock = dataGridView4.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Type_Materiel, Quantite_Materiel FROM materiel INNER JOIN stocke ON materiel.ID_Materiel = stocke.ID_Materiel ";
+            Reader = Command.ExecuteReader();
+            if (Reader.HasRows)
+            {
+
+
+                while (Reader.Read())
+                {
+
+                    dataGridView4.Rows.Add(Reader[0].ToString(), Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
