@@ -77,4 +77,28 @@ namespace Vue
                 Connect.Close();
             }
         }
+         // c'est la méthode pour afficher la table Stock d'aliment  pour le congélateur sur l'interface
+        private void loadCongel()
+        {
+         dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView3.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView3.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'congelateur' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)//Si il a une valeur à lire fait ce qu'il y a à l'intérieur
+            {
+             
+                while(Reader.Read())// tant qu'il a quelque chose à lire  fait sa
+                {
+                   
+                    dataGridView3.Rows.Add(Reader[0].ToString(),Reader[1].ToString());// chaque ligne de la première et deuxième colonne sera stocké dans le datagrid de la Congélation
+
+                }
+                Connect.Close();
+            }
+        }
+        
         
