@@ -1,0 +1,164 @@
+ //
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace Vue
+{
+    public partial class Form1 : Form
+    { 
+        MySqlConnection Connect = new MySqlConnection ("datasource=Localhost;port=3306;username=root;password=dylan;database=restaurant");
+        MySqlCommand Command = new MySqlCommand();
+        MySqlDataReader Reader;
+        public Form1()
+        {
+            InitializeComponent();
+            Command.Connection = Connect;
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadMateriel();
+            loadReserve();
+            
+        
+        }
+        // c'est la méthode pour afficher le nom et la quantite de materiel sur l'interface
+        private void loadMateriel()
+        {
+            dataGridView4.Rows.Clear();
+            DataGridViewColumn columnMateriel = dataGridView4.Columns[0];
+            columnMateriel.Width = 60;
+            DataGridViewColumn columnStock = dataGridView4.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Type_Materiel, Quantite_Materiel FROM materiel INNER JOIN stocke ON materiel.ID_Materiel = stocke.ID_Materiel ";
+            Reader = Command.ExecuteReader();
+            if (Reader.HasRows)
+            {
+
+
+                while (Reader.Read())
+                {
+
+                    dataGridView4.Rows.Add(Reader[0].ToString(), Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+          // c'est la méthode pour  afficher la table Stock d'aliment pour la réserve  sur l'interface 
+        private void loadReserve()
+        {
+            
+            dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView2.Columns[0]; // je selectionne la première colonne correspondant à la datagridview 2 (Reserve)
+            columnAliment.Width = 60; // sa augmente la longeur de la colonne de 60
+            DataGridViewColumn columnStock = dataGridView2.Columns[1];
+            columnStock.Width = 40; // sa augmente la longeur de la colonne de 40
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'reserve' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+             
+                while(Reader.Read())
+                {
+                   
+                    dataGridView2.Rows.Add(Reader[0].ToString(),Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+         // c'est la méthode pour afficher la table Stock d'aliment  pour le congélateur sur l'interface
+        private void loadCongel()
+        {
+         dataGridView2.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView3.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView3.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'congelateur' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)//Si il a une valeur à lire fait ce qu'il y a à l'intérieur
+            {
+             
+                while(Reader.Read())// tant qu'il a quelque chose à lire  fait sa
+                {
+                   
+                    dataGridView3.Rows.Add(Reader[0].ToString(),Reader[1].ToString());// chaque ligne de la première et deuxième colonne sera stocké dans le datagrid de la Congélation
+
+                }
+                Connect.Close();
+            }
+        }
+        
+        
+        
+        // c'est la méthode pour afficher la table Stock d'aliment  pour la chambre froide sur l'interface
+         private void loadFroid()
+        {
+            dataGridView5.Rows.Clear();
+            DataGridViewColumn columnAliment = dataGridView5.Columns[0];
+            columnAliment.Width = 60;
+            DataGridViewColumn columnStock = dataGridView5.Columns[1];
+            columnStock.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Nom_Aliment, Quantite_Aliment FROM aliment INNER JOIN stockage ON aliment.ID_Stockage = stockage.ID_Stockage WHERE stockage.Type_Stockage = 'chambre froide' ";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while(Reader.Read())
+                {
+                   
+                    dataGridView5.Rows.Add(Reader[0].ToString(),Reader[1].ToString());
+
+                }
+                Connect.Close();
+            }
+        }
+        
+        // c'est la méthode pour  afficher la table tableronde  sur l'interface 
+        private void loadTable()
+        {
+           
+            dataGridView6.Rows.Clear();
+            DataGridViewColumn colum1 = dataGridView6.Columns[0];
+            DataGridViewColumn colum2 = dataGridView6.Columns[1];
+            DataGridViewColumn colum3 = dataGridView6.Columns[2];
+            colum1.Width = 40;
+            colum2.Width = 40;
+            colum3.Width = 40;
+            Connect.Open();
+            Command.CommandText = "SELECT Numero_Table, Nbr_Place, Disponibilite From tableronde;";
+            Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
+            if (Reader.HasRows)
+            {
+                while(Reader.Read())
+                {
+                    dataGridView6.Rows.Add(Reader[0].ToString(),Reader[1].ToString(),Reader[2].ToString());
+                }
+                Connect.Close();
+            }
+        }
+        
+
+        private void button_Refresh_Click(object sender, EventArgs e)
+        {
+            
+            loadTable();
+            loadFroid();
+            loadCongel();
+            loadReserve(); //appel de la fonction loadgrid
+            loadMateriel();
+        }
+        
+        
