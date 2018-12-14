@@ -11,7 +11,7 @@ namespace Model
 
         public void recupererMateriel()
         {
-
+            //animation
         }
     }
 }

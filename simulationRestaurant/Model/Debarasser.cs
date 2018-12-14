@@ -6,8 +6,10 @@ namespace Model
     {
         public void debarasser(MySqlConnection Connect, MySqlCommand Command, MySqlDataReader Reader)
         {
-            //UPDATE tableronde SET Disponibilite=1 WHERE Nbr_Place = "+nombre_Place+" LIMIT 1;
-
+            
+            Connect.Open();
+            Command.CommandText = "SELECT Numero_Table FROM restaurant.tableronde WHERE Disponibilite = 0 LIMIT 1";
+            Reader = Command.ExecuteReader();
         }
     }
 }

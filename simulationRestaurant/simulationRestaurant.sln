@@ -5,9 +5,7 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BF5474C6-8FBD-4F5A-91F9-AB74A16C8727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controler", "Controler\Controler.csproj", "{10CC4B6A-593D-4138-89FB-B3CD9706CC2A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue", "Vue\Vue.csproj", "{14CE8926-C045-4D34-90C3-53BAC308D869}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller - Vue", "Vue\Controller - Vue.csproj", "{14CE8926-C045-4D34-90C3-53BAC308D869}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{BF5474C6-8FBD-4F5A-91F9-AB74A16C8727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF5474C6-8FBD-4F5A-91F9-AB74A16C8727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF5474C6-8FBD-4F5A-91F9-AB74A16C8727}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10CC4B6A-593D-4138-89FB-B3CD9706CC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10CC4B6A-593D-4138-89FB-B3CD9706CC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10CC4B6A-593D-4138-89FB-B3CD9706CC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10CC4B6A-593D-4138-89FB-B3CD9706CC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14CE8926-C045-4D34-90C3-53BAC308D869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14CE8926-C045-4D34-90C3-53BAC308D869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14CE8926-C045-4D34-90C3-53BAC308D869}.Release|Any CPU.ActiveCfg = Release|Any CPU

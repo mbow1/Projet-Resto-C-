@@ -1,6 +1,6 @@
 ﻿namespace Vue
 {
-    partial class Form1
+    partial class Controller
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Controller));
             this.button_Start = new System.Windows.Forms.Button();
             this.button_Pause = new System.Windows.Forms.Button();
             this.button_quitter = new System.Windows.Forms.Button();

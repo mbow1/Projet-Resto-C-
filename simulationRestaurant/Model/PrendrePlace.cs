@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Drawing;
+using System.Threading;
 using MySql.Data.MySqlClient;
 
 
@@ -40,10 +35,42 @@ namespace Model
 
         public Point prendrePlace(MySqlConnection Connect, MySqlCommand Command, MySqlDataReader Reader)
         {
-            Point pt = new Point();
+            Connect.Open();
+            Command.CommandText = "SELECT Numero_Table FROM restaurant.tableronde WHERE Disponibilite = 1 LIMIT 1";
+            Reader = Command.ExecuteReader();
+            Reader.Read();
+            if (Reader[0].ToString() == "1")
+            {
+                Connect.Close();
+                return new Point(273, 337);
+            }
+            else if (Reader[0].ToString() == "2")
+            {
+                Connect.Close();
+                return new Point(275, 447);
+            }
+            else if (Reader[0].ToString() == "3")
+            {
+                Connect.Close();
+                return new Point(425, 391);
+            }
+            else if (Reader[0].ToString() == "4")
+            {
+                Connect.Close();
+                return new Point(601, 417);
+            }
+            else
+            {
+                Connect.Close();
+                return new Point(213, 309);
+            }
+           
+        }
 
-
-            return pt;
+        public Point partirClient(MySqlConnection Connect, MySqlCommand Command, MySqlDataReader Reader)
+        {
+            Thread.Sleep(30*1000);
+            return new Point(93, 500);
         }
     }
 }

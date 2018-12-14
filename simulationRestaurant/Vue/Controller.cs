@@ -7,13 +7,13 @@ using MySql.Data.MySqlClient;
 namespace Vue
 {
 
-    public partial class Form1 : Form
+    public partial class Controller : Form
     {
         MySqlConnection Connect = new MySqlConnection(@"datasource=Localhost;port=3306;username=root;database=restaurant");
         MySqlCommand Command = new MySqlCommand();
         MySqlDataReader Reader;
 
-        public Form1()
+        public Controller()
         {
             InitializeComponent();
             Deplacement.Start();
@@ -41,6 +41,8 @@ namespace Vue
 
 
             laver.laver(Connect,Command,Reader);
+
+
 
 
         }
@@ -666,11 +668,11 @@ namespace Vue
         /// <param name="arrive"></param>
         /// <param name="speed"></param>
 
-        public void deplacer(PictureBox[] personnage,PictureBox arrive, int speed)
+        public void deplacer(PictureBox[] personnage,Point arrive, int speed)
         {
             
 
-            if (personnage[3].Location.X < arrive.Location.X)
+            if (personnage[3].Location.X < arrive.X)
             {
                 personnage[0].Visible = !true;
                 personnage[1].Visible = !true;
@@ -684,7 +686,7 @@ namespace Vue
                 //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
 
             }
-            else if (personnage[2].Location.X > arrive.Location.X)
+            else if (personnage[2].Location.X > arrive.X)
             {
                 personnage[0].Visible = !true;
                 personnage[1].Visible = !true;
@@ -697,7 +699,7 @@ namespace Vue
 
 
             }
-            if (personnage[1].Location.Y < arrive.Location.Y)
+            if (personnage[1].Location.Y < arrive.Y)
             {
                 personnage[0].Visible = !true;
                 personnage[1].Visible = true;
@@ -709,7 +711,7 @@ namespace Vue
                 personnage[3].Location = personnage[1].Location;
 
             }
-            else if (personnage[0].Location.Y > arrive.Location.Y)
+            else if (personnage[0].Location.Y > arrive.Y)
             {
                 personnage[0].Visible = true;
                 personnage[1].Visible = !true;
@@ -724,20 +726,21 @@ namespace Vue
 
         }
         Commande commander = new Commande();
-
+        PrendrePlace assoir = new PrendrePlace();
         public bool estArriveX,estArriveY; 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
             //deplacer(Chefderangf, pictureBox547,1);
-            deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261, 1);
+            //deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261.Location, 1);
 
-            
+            deplacer(new[] { Clientf, Clientb, Clientg, Client }, assoir.prendrePlace(Connect, Command,  Reader), 1);
 
         }
 
         private void button_quitter_Click(object sender, EventArgs e)
         {
+           
             Application.Exit();
         }
         

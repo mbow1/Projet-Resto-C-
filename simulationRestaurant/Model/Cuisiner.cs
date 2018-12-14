@@ -7,6 +7,7 @@ namespace Model
     {
         public void cuisiner(MySqlConnection Connect, MySqlCommand Command, MySqlDataReader Reader)
         {
+            Connect.Open();
             string[] nom_Materiel = new string[] { "assiette", "fourchette", "couteaux", "cuillère a soupe", "cuillère à café", @"Verre d'eau", "Verre de vin", "Serviettes", "Nappes", "Casseroles", "Feux de cuisson", "Poêles", "Four", "Cuillères en bois", "Bols à salade", "Autocuiseur", "Presse-agrumes", "Tamis, Entonnoirs", "Couteaux de cuisine" };
 
             Random i = new Random();
