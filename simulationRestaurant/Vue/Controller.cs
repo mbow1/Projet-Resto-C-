@@ -13,22 +13,33 @@ namespace Vue
         MySqlCommand Command = new MySqlCommand();
         MySqlDataReader Reader;
 
+
+
+
         public Controller()
         {
             InitializeComponent();
             Deplacement.Start();
             perso.Start();
-            perso.Interval = 5000;
+            perso.Interval = 3000;
             //Chefderangf.ImageLocation = @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\front.gif";
 
             //Chefdecuisineb.Location = Chefdecuisinef.Location;
             initpersonnage(Chefpartief, Chefpartieb);
             initpersonnage(Chefdecuisinef, Chefdecuisineb);
             initpersonnage(Chefderangf, Chefderangb, Chefderangd, Chefderangg);
-            initpersonnage(Clientf, Clientb, Client, Clientg, Clientp);
+            //initpersonnage(Clientf, Clientb, Client, Clientg, Clientp);
             initpersonnage(Commiscuisinef, Commiscuisineb, Commiscuisined, Commiscuisineg);
             initpersonnage(Plongeursf, Plongeursb, Plongeursd, Plongeursg);
             initpersonnage(Commisf, Commisb, Commisd, Commisg);
+
+
+
+
+
+            /////////////////////////////////////////
+            initpersonnage(Clientf, Clientb, Client, Clientg);
+            PictureBox[] cl = new PictureBox[5];
 
 
             ////////////////////////////////Base de Données ////////////////////////////////
@@ -441,195 +452,17 @@ namespace Vue
         }
         
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
+ 
 
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox37_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox31_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox34_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox35_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox36_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox29_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox472_Click(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void pictureBox5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox398_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox505_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox507_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox516_Click(object sender, EventArgs e)
-        {
-
-        }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -656,10 +489,6 @@ namespace Vue
             }
         }
 
-        public static bool IsNullOrEmpty(Array array)
-        {
-            return (array == null || array.Length == 0);
-        }
 
         /// <summary>
         /// 
@@ -667,7 +496,7 @@ namespace Vue
         /// <param name="personnage"></param>
         /// <param name="arrive"></param>
         /// <param name="speed"></param>
-
+        PictureBox pb = new PictureBox();
         public void deplacer(PictureBox[] personnage,Point arrive, int speed)
         {
             
@@ -682,6 +511,7 @@ namespace Vue
                 personnage[0].Location = personnage[3].Location;
                 personnage[2].Location = personnage[3].Location;
                 personnage[3].Location = personnage[3].Location;
+                
 
                 //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
 
@@ -710,6 +540,7 @@ namespace Vue
                 personnage[2].Location = personnage[1].Location;
                 personnage[3].Location = personnage[1].Location;
 
+
             }
             else if (personnage[0].Location.Y > arrive.Y)
             {
@@ -723,18 +554,88 @@ namespace Vue
                 personnage[3].Location = personnage[0].Location;
             }
 
+        }
+
+
+        public void deplacer(PictureBox personnage, Point arrive)
+        {
+
+
+            if (personnage.Location.X < arrive.X)
+            {
+                personnage.Left += 1;
+
+
+                //setDirectionAnimation(personnage, @"C:\Users\MBOW\Documents\GitHub\Projet-Resto-C-\simulationRestaurant\Vue\Sprite\Chefderang\gauche.gif");
+
+            }
+            else if (personnage.Location.X > arrive.X)
+            {
+            
+                personnage.Left -= 1;
+    
+
+
+            }
+            if (personnage.Location.Y < arrive.Y)
+            {
+               
+                personnage.Top += 1;
+                
+
+
+            }
+            else if (personnage.Location.Y > arrive.Y)
+            {
+
+                personnage.Top -= 1;
+               
+            }
 
         }
         Commande commander = new Commande();
-        PrendrePlace assoir = new PrendrePlace();
-        public bool estArriveX,estArriveY; 
+        Mouvement bouger = new Mouvement();
+        public bool estArrive = false;
+        public int i=0;
+        //Point[] arrive =  new Point[] { new Point(93, 500), new Point(122, 500), new Point(122, 309), new Point(273, 337) };
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            //deplacer(Chefderangf, pictureBox547,1);
-            //deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261.Location, 1);
+            //bouger.mouvement(new[] { Clientf, Clientb, Clientg, Client },new[] { new Point(93, 500), new Point(122, 500), new Point(122, 309), new Point(273, 337) });
 
-            deplacer(new[] { Clientf, Clientb, Clientg, Client }, assoir.prendrePlace(Connect, Command,  Reader), 1);
+            i++;
+            if (i > 0 && i < 60)
+            {
+                deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox253.Location, 1);
+
+            }
+            if (i > 60 && i < 270)
+            {
+                deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261.Location, 1);
+            }
+
+            if (i > 270 && i < 440)
+            {
+                //pictureBox391
+                deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox391.Location, 1);
+            }
+            if (i > 440 && i < 550)
+            {
+                //pictureBox391
+                deplacer(new[] { Clientf, Clientb, Client,Clientg  }, pictureBox539.Location, 1);
+                deplacer(Serveurs, pictureBox549.Location);
+            }if (i > 550)
+            {
+                commander.commander(Connect, Command, Reader);
+            }
+
+            //deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261.Location, 1);
+            //deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox253.Location, 1);
+
+        }
+        private void depl2_Tick(object sender, EventArgs e)
+        {
+            deplacer(new[] { Clientf, Clientb, Clientg, Client }, pictureBox261.Location, 1);
 
         }
 
@@ -749,6 +650,7 @@ namespace Vue
             
 
             changeSprite2(Chefdecuisinef, Chefdecuisineb);
+            changeSprite2(Chefpartief,Chefpartieb);
         }
 
         private void pictureBox574_Click(object sender, EventArgs e)
@@ -769,5 +671,7 @@ namespace Vue
         {
 
         }
+
+        
     }
 }

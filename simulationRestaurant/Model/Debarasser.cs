@@ -10,6 +10,8 @@ namespace Model
             Connect.Open();
             Command.CommandText = "SELECT Numero_Table FROM restaurant.tableronde WHERE Disponibilite = 0 LIMIT 1";
             Reader = Command.ExecuteReader();
+            Connect.Close();
+            //animation
         }
     }
 }

@@ -12,7 +12,8 @@ namespace Model
 
            
             Connect.Open();
-            Command.CommandText = "SELECT Description_Menu FROM menu WHERE Nom_Menu = " + menuChoisi + "";
+           // Command.CommandText = "SELECT Description_Menu FROM menu WHERE Nom_Menu = '" + menuChoisi + "'";
+            Command.CommandText = "SELECT Description_Menu FROM menu WHERE Nom_Menu = 'crevettes '";
             string listeIngredient = "test";
             Reader = Command.ExecuteReader();//c'est le buffer qui va contenir le resultat de la requete
             if (Reader.HasRows)
@@ -27,7 +28,7 @@ namespace Model
 
             string[] ingredient = listeIngredient.Split(','); //we separate list of ingredients between , and stock them in string. 
 
-            for (int i = 0; i <= ingredient.Length; i++)
+            for (int i = 0; i < ingredient.Length; i++)
             {
                 Command.CommandText = "UPDATE aliment SET Quantite_Aliment = Quantite_Aliment - 1 WHERE Nom_Aliment = " + ingredient[i] + " AND Quantite_Aliment > 0;";
             }

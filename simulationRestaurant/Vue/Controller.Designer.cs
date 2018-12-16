@@ -35,10 +35,21 @@
             this.button_quitter = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.AlimentReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.AlimentCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Materiel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.Aliment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockFroid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.NumeroTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nbr_Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dispo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.checkBox_modeSimul = new System.Windows.Forms.CheckBox();
             this.Deplacement = new System.Windows.Forms.Timer(this.components);
@@ -651,17 +662,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.perso = new System.Windows.Forms.Timer(this.components);
             this.Refresh_btn = new System.Windows.Forms.Button();
-            this.AlimentCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockCongel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Materiel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Aliment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockFroid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AlimentReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockReserve = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumeroTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nbr_Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dispo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depl2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -1319,6 +1320,16 @@
             this.dataGridView2.Size = new System.Drawing.Size(121, 317);
             this.dataGridView2.TabIndex = 5;
             // 
+            // AlimentReserve
+            // 
+            this.AlimentReserve.HeaderText = "AlimentReserve";
+            this.AlimentReserve.Name = "AlimentReserve";
+            // 
+            // StockReserve
+            // 
+            this.StockReserve.HeaderText = "StockReserve";
+            this.StockReserve.Name = "StockReserve";
+            // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1329,6 +1340,16 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(113, 150);
             this.dataGridView3.TabIndex = 6;
+            // 
+            // AlimentCongel
+            // 
+            this.AlimentCongel.HeaderText = "AlimentCongel";
+            this.AlimentCongel.Name = "AlimentCongel";
+            // 
+            // StockCongel
+            // 
+            this.StockCongel.HeaderText = "StockCongel";
+            this.StockCongel.Name = "StockCongel";
             // 
             // dataGridView4
             // 
@@ -1341,6 +1362,16 @@
             this.dataGridView4.Size = new System.Drawing.Size(113, 231);
             this.dataGridView4.TabIndex = 7;
             // 
+            // Materiel
+            // 
+            this.Materiel.HeaderText = "Materiel";
+            this.Materiel.Name = "Materiel";
+            // 
+            // Quantite
+            // 
+            this.Quantite.HeaderText = "Quantite";
+            this.Quantite.Name = "Quantite";
+            // 
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1351,6 +1382,16 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(126, 317);
             this.dataGridView5.TabIndex = 8;
+            // 
+            // Aliment
+            // 
+            this.Aliment.HeaderText = "Aliment";
+            this.Aliment.Name = "Aliment";
+            // 
+            // StockFroid
+            // 
+            this.StockFroid.HeaderText = "StockFroid";
+            this.StockFroid.Name = "StockFroid";
             // 
             // dataGridView6
             // 
@@ -1363,6 +1404,21 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(121, 150);
             this.dataGridView6.TabIndex = 9;
+            // 
+            // NumeroTable
+            // 
+            this.NumeroTable.HeaderText = "NumeroTable";
+            this.NumeroTable.Name = "NumeroTable";
+            // 
+            // Nbr_Place
+            // 
+            this.Nbr_Place.HeaderText = "Nbr_Place";
+            this.Nbr_Place.Name = "Nbr_Place";
+            // 
+            // Dispo
+            // 
+            this.Dispo.HeaderText = "Dispo";
+            this.Dispo.Name = "Dispo";
             // 
             // dataGridView7
             // 
@@ -2054,7 +2110,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(750, 556);
             this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Serveurs
             // 
@@ -2245,7 +2300,7 @@
             // Clientf
             // 
             this.Clientf.Image = ((System.Drawing.Image)(resources.GetObject("Clientf.Image")));
-            this.Clientf.Location = new System.Drawing.Point(131, 346);
+            this.Clientf.Location = new System.Drawing.Point(61, 505);
             this.Clientf.Name = "Clientf";
             this.Clientf.Size = new System.Drawing.Size(20, 25);
             this.Clientf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2255,18 +2310,19 @@
             // Clientp
             // 
             this.Clientp.Image = ((System.Drawing.Image)(resources.GetObject("Clientp.Image")));
-            this.Clientp.Location = new System.Drawing.Point(105, 366);
+            this.Clientp.Location = new System.Drawing.Point(35, 525);
             this.Clientp.Name = "Clientp";
             this.Clientp.Size = new System.Drawing.Size(26, 27);
             this.Clientp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Clientp.TabIndex = 840;
             this.Clientp.TabStop = false;
+            this.Clientp.Visible = false;
             // 
             // Clientb
             // 
             this.Clientb.BackColor = System.Drawing.Color.Transparent;
             this.Clientb.Image = ((System.Drawing.Image)(resources.GetObject("Clientb.Image")));
-            this.Clientb.Location = new System.Drawing.Point(119, 315);
+            this.Clientb.Location = new System.Drawing.Point(49, 474);
             this.Clientb.Name = "Clientb";
             this.Clientb.Size = new System.Drawing.Size(19, 25);
             this.Clientb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2276,7 +2332,7 @@
             // Client
             // 
             this.Client.Image = ((System.Drawing.Image)(resources.GetObject("Client.Image")));
-            this.Client.Location = new System.Drawing.Point(73, 360);
+            this.Client.Location = new System.Drawing.Point(3, 519);
             this.Client.Name = "Client";
             this.Client.Size = new System.Drawing.Size(21, 25);
             this.Client.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2286,7 +2342,7 @@
             // Clientg
             // 
             this.Clientg.Image = ((System.Drawing.Image)(resources.GetObject("Clientg.Image")));
-            this.Clientg.Location = new System.Drawing.Point(93, 335);
+            this.Clientg.Location = new System.Drawing.Point(23, 494);
             this.Clientg.Name = "Clientg";
             this.Clientg.Size = new System.Drawing.Size(21, 25);
             this.Clientg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -5342,7 +5398,6 @@
             this.pictureBox472.Size = new System.Drawing.Size(32, 31);
             this.pictureBox472.TabIndex = 497;
             this.pictureBox472.TabStop = false;
-            this.pictureBox472.Click += new System.EventHandler(this.pictureBox472_Click);
             // 
             // pictureBox473
             // 
@@ -7422,7 +7477,6 @@
             this.pictureBox30.Size = new System.Drawing.Size(32, 31);
             this.pictureBox30.TabIndex = 58;
             this.pictureBox30.TabStop = false;
-            this.pictureBox30.Click += new System.EventHandler(this.pictureBox30_Click);
             // 
             // pictureBox29
             // 
@@ -7432,7 +7486,6 @@
             this.pictureBox29.Size = new System.Drawing.Size(32, 31);
             this.pictureBox29.TabIndex = 50;
             this.pictureBox29.TabStop = false;
-            this.pictureBox29.Click += new System.EventHandler(this.pictureBox29_Click);
             // 
             // pictureBox28
             // 
@@ -7442,7 +7495,6 @@
             this.pictureBox28.Size = new System.Drawing.Size(32, 31);
             this.pictureBox28.TabIndex = 49;
             this.pictureBox28.TabStop = false;
-            this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
             // 
             // pictureBox27
             // 
@@ -7461,7 +7513,6 @@
             this.pictureBox26.Size = new System.Drawing.Size(32, 31);
             this.pictureBox26.TabIndex = 47;
             this.pictureBox26.TabStop = false;
-            this.pictureBox26.Click += new System.EventHandler(this.pictureBox26_Click);
             // 
             // pictureBox25
             // 
@@ -7471,7 +7522,6 @@
             this.pictureBox25.Size = new System.Drawing.Size(32, 31);
             this.pictureBox25.TabIndex = 46;
             this.pictureBox25.TabStop = false;
-            this.pictureBox25.Click += new System.EventHandler(this.pictureBox25_Click);
             // 
             // pictureBox24
             // 
@@ -7481,7 +7531,6 @@
             this.pictureBox24.Size = new System.Drawing.Size(32, 31);
             this.pictureBox24.TabIndex = 45;
             this.pictureBox24.TabStop = false;
-            this.pictureBox24.Click += new System.EventHandler(this.pictureBox24_Click);
             // 
             // pictureBox23
             // 
@@ -7491,7 +7540,6 @@
             this.pictureBox23.Size = new System.Drawing.Size(32, 31);
             this.pictureBox23.TabIndex = 44;
             this.pictureBox23.TabStop = false;
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click);
             // 
             // pictureBox10
             // 
@@ -7501,7 +7549,6 @@
             this.pictureBox10.Size = new System.Drawing.Size(32, 36);
             this.pictureBox10.TabIndex = 25;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // perso
             // 
@@ -7517,62 +7564,11 @@
             this.Refresh_btn.UseVisualStyleBackColor = true;
             this.Refresh_btn.Click += new System.EventHandler(this.Refresh_btn_Click);
             // 
-            // AlimentCongel
+            // depl2
             // 
-            this.AlimentCongel.HeaderText = "AlimentCongel";
-            this.AlimentCongel.Name = "AlimentCongel";
+            this.depl2.Tick += new System.EventHandler(this.depl2_Tick);
             // 
-            // StockCongel
-            // 
-            this.StockCongel.HeaderText = "StockCongel";
-            this.StockCongel.Name = "StockCongel";
-            // 
-            // Materiel
-            // 
-            this.Materiel.HeaderText = "Materiel";
-            this.Materiel.Name = "Materiel";
-            // 
-            // Quantite
-            // 
-            this.Quantite.HeaderText = "Quantite";
-            this.Quantite.Name = "Quantite";
-            // 
-            // Aliment
-            // 
-            this.Aliment.HeaderText = "Aliment";
-            this.Aliment.Name = "Aliment";
-            // 
-            // StockFroid
-            // 
-            this.StockFroid.HeaderText = "StockFroid";
-            this.StockFroid.Name = "StockFroid";
-            // 
-            // AlimentReserve
-            // 
-            this.AlimentReserve.HeaderText = "AlimentReserve";
-            this.AlimentReserve.Name = "AlimentReserve";
-            // 
-            // StockReserve
-            // 
-            this.StockReserve.HeaderText = "StockReserve";
-            this.StockReserve.Name = "StockReserve";
-            // 
-            // NumeroTable
-            // 
-            this.NumeroTable.HeaderText = "NumeroTable";
-            this.NumeroTable.Name = "NumeroTable";
-            // 
-            // Nbr_Place
-            // 
-            this.Nbr_Place.HeaderText = "Nbr_Place";
-            this.Nbr_Place.Name = "Nbr_Place";
-            // 
-            // Dispo
-            // 
-            this.Dispo.HeaderText = "Dispo";
-            this.Dispo.Name = "Dispo";
-            // 
-            // Form1
+            // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -7597,8 +7593,8 @@
             this.Controls.Add(this.button_quitter);
             this.Controls.Add(this.button_Pause);
             this.Controls.Add(this.button_Start);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Controller";
+            this.Text = "Resto Hyper Cool";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -8847,6 +8843,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NumeroTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nbr_Place;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dispo;
+        private System.Windows.Forms.Timer depl2;
     }
 }
 

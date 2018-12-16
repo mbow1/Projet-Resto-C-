@@ -43,15 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acteur.cs" />
+    <Compile Include="ChefDeCuisine.cs" />
+    <Compile Include="ChefDePartie.cs" />
+    <Compile Include="ChefDeRang.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Commande.cs" />
+    <Compile Include="CommisCuisine.cs" />
+    <Compile Include="CommisSalle.cs" />
     <Compile Include="Cuisiner.cs" />
     <Compile Include="Debarasser.cs" />
     <Compile Include="Laver.cs" />
+    <Compile Include="MaitreHotel.cs" />
     <Compile Include="map.cs" />
+    <Compile Include="Plongeur.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="PrendrePlace.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecupererMateriel.cs" />
+    <Compile Include="Serveur.cs" />
     <Compile Include="Servir.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
